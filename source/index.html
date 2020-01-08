@@ -7,6 +7,76 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    sfdsf
+    <header class="header">
+      <div class="header__wrap">
+        <div class="header__logo-wrap">
+          <a class="header__logo" href="#">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" alt="Логотип">
+            </picture>
+          </a>
+          <button class="header__burger" type="button"></button>
+        </div>
+        <nav class="header__nav nav">
+          <ul class="list-style-reset nav__list">
+            <li class="nav__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Pink</h1>
+      <section class="greeting">
+        <div class="greeting__wrap">
+          <div class="greeting__container">
+            <h2 class="visually-hidden">Ссылки на приложение</h2>
+            <div class="greeting__slogan-wrap">
+              <p class="greeting__slogan">Взгляните на жизнь иначе!</p>
+            </div>
+            <a class="greeting__download" href="#">Скачать приложение</a>
+            <ul class="list-style-reset greeting__link-list links">
+              <li class="links__item apple">
+                <a href="#">
+                  <span class="visually-hidden">
+                    Apple
+                  </span>
+                </a>
+              </li>
+              <li class="links__item android">
+                <a href="#">
+                  <span class="visually-hidden">
+                    Android
+                  </span>
+                </a>
+              </li>
+              <li class="links__item windows">
+                <a href="#">
+                  <span class="visually-hidden">
+                    Windows
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="greeting__subtitle">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

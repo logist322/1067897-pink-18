@@ -1,0 +1,51 @@
+.nav {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.nav--opened {
+  display: block;
+}
+
+.nav__list {
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.nav__item {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid #000000;
+
+  @include desktop {
+    margin-left: 80px;
+    margin-top: 20px;
+    border: none;
+  }
+}
+
+.nav__item a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: $bold;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 25px 20px;
+  word-break: break-all;
+
+  @include desktop {
+    display: inline;
+    font-family: $regular;
+    padding: 0;
+    text-transform: none;
+  }
+}
