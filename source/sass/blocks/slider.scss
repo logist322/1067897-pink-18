@@ -1,0 +1,69 @@
+.slider__item blockquote {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.slider__item p {
+  order: 1;
+  font-family: $regular;
+  font-size: 14px;
+  line-height: 2.14;
+  margin-top: 15px;
+  color: #283645;
+  max-width: 620px;
+
+  @include tablet {
+    order: 0;
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 1.66;
+  }
+
+  @include desktop {
+  max-width: none;
+  width: 690px;
+  }
+}
+
+.slider__item cite {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+  }
+}
+
+.slider__item b {
+  font-family: $bold;
+  font-size: 18px;
+  font-style: normal;
+
+  @include tablet {
+    font-size: 20px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+  }
+}
+
+.slider__item small {
+  display: none;
+
+  @include tablet {
+    display: block;
+    margin-top: 10px;
+    font-family: $regular;
+    font-size: 14px;
+    color: #283645;
+    font-style: normal;
+  }
+
+  @include desktop {
+    font-size: 18px;
+    margin-top: 3px;
+  }
+}

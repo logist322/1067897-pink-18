@@ -1,4 +1,6 @@
 .header {
+  min-width: 320px;
+  box-sizing: border-box;
   position: absolute;
   width: 100%;
   background-color: rgba(29, 38, 49, 0.3);
@@ -17,14 +19,14 @@
 .header__wrap {
   @include desktop {
     width: 940px;
-    margin: 27px auto 43px;
+    margin: 25px auto 43px;
     display: flex;
     align-items: flex-end;
   }
 }
 
 .header__logo-wrap {
-  padding: 25px 20px;
+  padding: 22px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
