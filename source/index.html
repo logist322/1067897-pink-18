@@ -14,7 +14,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
               <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img src="img/logo-pink-whitetext.svg" alt="Логотип">
+              <img src="img/logo-pink-white-mobile.svg" alt="Логотип">
             </picture>
           </a>
           <button class="header__burger" type="button"></button>
@@ -210,9 +210,35 @@
       </section>
 
       <section class="map">
+        <img src="img/bg-triangle-white-footer.svg" aria-hidden="true">
         <iframe src="https://yandex.ru/map-widget/v1/-/CGxdJRZ~" frameborder="0" allowfullscreen="true"></iframe>
       </section>
     </main>
+
+    <footer class="footer footer--main">
+      <div class="footer__container">
+        <a class="footer__logo-wrap" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип">
+          </picture>
+        </a>
+        <ul class="list-style-reset footer__social-links social">
+          <li class="social__item">
+            <a class="twitter" href="#" aria-label="Twitter"></a>
+          </li>
+          <li class="social__item">
+            <a class="facebook" href="#" aria-label="Facebook"></a>
+          </li>
+          <li class="social__item">
+            <a class="youtube" href="#" aria-label="YouTube"></a>
+          </li>
+        </ul>
+        <div class="footer__academy-wrap">
+          <a class="footer__academy" href="#">Разработано</a>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/script.js"></script>
   </body>

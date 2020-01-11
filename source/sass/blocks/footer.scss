@@ -1,0 +1,79 @@
+.footer {
+  background-color: #ffffff;
+
+  @include tablet{
+    padding: 36px 20px;
+  }
+
+  @include desktop {
+    padding: 70px 0;
+  }
+}
+
+.footer--main {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.footer__container {
+  @include tablet{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @include desktop {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.footer__logo-wrap {
+  @include tablet {
+    width: 147px;
+  }
+}
+
+.footer img {
+  display: block;
+  width: 100%;
+}
+
+.footer__social-links {
+  @include tablet {
+    margin-top: 3px;
+  }
+}
+
+.footer__academy-wrap {
+  @include tablet {
+    width: 147px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 14px;
+  }
+}
+
+.footer__academy {
+  @include tablet {
+    display: flex;
+    align-items: center;
+    padding-right: 42px;
+    height: 34px;
+    background-image: url("../img/logo-htmlacademy.svg");
+    background-position: right 0 top 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: $regular;
+    font-size: 14px;
+    color: #283645;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
+}
