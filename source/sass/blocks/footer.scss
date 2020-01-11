@@ -1,7 +1,7 @@
 .footer {
   background-color: #ffffff;
 
-  @include tablet{
+  @include tablet {
     padding: 36px 20px;
   }
 
@@ -19,7 +19,7 @@
 }
 
 .footer__container {
-  @include tablet{
+  @include tablet {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;

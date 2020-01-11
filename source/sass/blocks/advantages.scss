@@ -7,7 +7,7 @@
   @include tablet {
     align-items: flex-start;
 
-    &:before {
+    &::before {
       position: absolute;
       content: "";
       top: 50%;
@@ -24,7 +24,7 @@
     justify-content: space-between;
 
 
-    &:before {
+    &::before {
       display: none;
     }
   }
