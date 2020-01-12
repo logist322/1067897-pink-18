@@ -1,0 +1,32 @@
+.gallery {
+  background-color: #ffffff;
+  padding: 0 20px;
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @include tablet {
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.gallery__item {
+  width: 280px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    width: 300px;
+  }
+
+  @include desktop {
+    margin-bottom: 52px;
+  }
+}

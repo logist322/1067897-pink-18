@@ -1,0 +1,83 @@
+.description {
+  background-color: #f2f2f2;
+  padding: 20px 10px 23px 17px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    padding: 25px 30px 25px 27px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    padding-right: 32px;
+  }
+}
+
+.description__name-data {
+  @include tablet {
+    margin-right: auto;
+  }
+}
+
+.description__name-data b {
+  font-family: $bold;
+  font-size: 14px;
+  color: #283645;
+}
+
+.description__name-data small {
+  font-family: $light;
+  font-size: 12px;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.description p {
+  margin-top: 5px;
+  font-family: $regular;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #283645;
+
+  @include tablet {
+    order: 1;
+  }
+}
+
+.description__like {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+
+  @include tablet {
+    margin-top: 0;
+  }
+}
+
+.description__like button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  margin-right: 20px;
+
+  @include tablet {
+    margin-right: 0;
+    margin-left: 17px;
+    order: 1;
+  }
+}
+
+.description__like span {
+  font-family: $regular;
+  font-size: 12px;
+  color: #d22856;
+  text-transform: uppercase;
+}

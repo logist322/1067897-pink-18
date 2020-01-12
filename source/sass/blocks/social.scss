@@ -1,19 +1,13 @@
 .social {
-  @include tablet {
-    display: flex;
-  }
+  display: flex;
 }
 
 .social__item {
-  @include tablet {
-    display: flex;
-  }
+  display: flex;
 }
 
 .social__item:not(:last-child) {
-  @include tablet {
-    margin-right: 10px;
-  }
+  margin-right: 10px;
 
   @include desktop {
     margin-right: 15px;
@@ -21,14 +15,12 @@
 }
 
 .social__item a {
-  @include tablet {
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    border: 3px solid rgba(40, 54, 69, 0.1);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-  }
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .twitter {

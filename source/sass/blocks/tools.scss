@@ -1,0 +1,80 @@
+.tools {
+  display: flex;
+  justify-content: space-around;
+
+  @include tablet {
+    flex-direction: column;
+    position: relative;
+    top: -18px;
+  }
+
+  @include desktop {
+    top: -18px;
+  }
+}
+
+.tools__item {
+  @include tablet {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.tools__item button {
+  width: 48px;
+  height: 44px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: none;
+
+  @include tablet {
+    width: 24px;
+    height: 22px;
+  }
+
+  @include desktop {
+    width: 48px;
+    height: 44px;
+  }
+}
+
+.tools__item--crop button {
+  background-image: url("../img/icon-editor-crop.svg");
+  background-size: 44px;
+
+  @include tablet {
+    background-size: 22px;
+  }
+
+  @include desktop {
+    background-size: 44px;
+  }
+}
+
+.tools__item--bucket button {
+  background-image: url("../img/icon-editor-fill.svg");
+  background-size: 48px;
+
+  @include tablet {
+    background-size: 24px;
+  }
+
+  @include desktop {
+    background-size: 48px;
+  }
+}
+
+.tools__item--contrast button {
+  background-image: url("../img/icon-editor-contrast.svg");
+  background-size: 32px;
+
+  @include tablet {
+    background-size: 16px;
+  }
+
+  @include desktop {
+    background-size: 32px;
+  }
+}

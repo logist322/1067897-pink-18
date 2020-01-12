@@ -1,0 +1,88 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__img-wrap img {
+  width: 100%;
+  display: block;
+}
+
+.card__description {
+  box-sizing: border-box;
+  flex-grow: 1;
+  background-color: #f2f2f2;
+  padding: 20px 10px 23px 17px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    padding: 25px 30px 27px 27px;
+    min-height: 156px;
+  }
+
+  @include desktop {
+    padding-right: 32px;
+  }
+}
+
+.card__name-data {
+  @include tablet {
+    margin-right: auto;
+  }
+}
+
+.card__name-data b {
+  font-family: $bold;
+  font-size: 14px;
+  color: #283645;
+}
+
+.card__name-data small {
+  font-family: $light;
+  font-size: 12px;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.card p {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-family: $regular;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #283645;
+}
+
+.card__like {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+
+.card__like button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  margin-right: 20px;
+
+  @include tablet {
+    margin-right: 0;
+    margin-left: auto;
+    order: 1;
+  }
+}
+
+.card__like span {
+  font-family: $regular;
+  font-size: 12px;
+  color: #d22856;
+  text-transform: uppercase;
+}

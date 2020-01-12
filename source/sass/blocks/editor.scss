@@ -1,0 +1,65 @@
+.editor {
+  padding: 20px 20px 40px;
+  background-color: #f2f2f2;
+
+  @include tablet {
+    padding: 57px 20px 54px;
+  }
+
+  @include desktop {
+    background-color: #ffffff;
+    padding: 0 0 30px;
+  }
+}
+
+.editor__container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 340px;
+
+  @include tablet {
+    flex-direction: row;
+    max-width: 645px;
+  }
+
+  @include desktop {
+    background-color: #f2f2f2;
+    width: 940px;
+    max-width: none;
+    padding: 57px 60px 57px 80px;
+  }
+}
+
+.editor__image-wrap {
+  width: 100%;
+
+  @include tablet {
+    width: 300px;
+    margin-right: 45px;
+  }
+
+  @include desktop {
+    margin-right: 90px;
+  }
+}
+
+.editor__image-wrap img {
+  width: 100%;
+  display: block;
+}
+
+.editor__controls {
+  margin-top: 42px;
+
+  @include tablet {
+    max-width: 300px;
+    flex-grow: 1;
+    margin-top: 0;
+  }
+
+  @include desktop {
+    max-width: none;
+  }
+}
