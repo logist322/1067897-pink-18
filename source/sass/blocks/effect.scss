@@ -23,8 +23,18 @@
     padding-top: 35px;
     min-height: 241px;
     width: 310px;
+  }
 
-    &::before {
+  @include desktop {
+    width: 940px;
+    box-sizing: border-box;
+    min-height: 345px;
+    padding-left: 365px;
+    padding-top: 95px;
+  }
+
+  &::before {
+    @include tablet {
       position: absolute;
       top: 0;
       left: 0;
@@ -35,7 +45,14 @@
       background-size: contain;
     }
 
-    &::after {
+    @include desktop {
+      width: 298px;
+      height: 346px;
+    }
+  }
+
+  &::after {
+    @include tablet {
       position: absolute;
       top: 156px;
       left: 119px;
@@ -56,25 +73,12 @@
     }
 
     @include desktop {
-      width: 940px;
-      box-sizing: border-box;
-      min-height: 345px;
-      padding-left: 365px;
-      padding-top: 95px;
-
-      &::before {
-        width: 298px;
-        height: 346px;
-      }
-
-      &::after {
-        top: 195.5px;
-        left: 150px;
-        width: 253px;
-        height: 253px;
-        font-size: 120px;
-        border-width: 17px;
-      }
+      top: 195.5px;
+      left: 150px;
+      width: 253px;
+      height: 253px;
+      font-size: 120px;
+      border-width: 17px;
     }
   }
 }
@@ -93,7 +97,7 @@
   }
 }
 
-.effect__container p {
+.effect__paragraph {
   @include tablet {
     font-family: $regular;
     font-size: 14px;
@@ -109,7 +113,7 @@
   }
 }
 
-.effect__container a {
+.effect__link {
   @include tablet {
     font-family: $regular;
     font-size: 14px;

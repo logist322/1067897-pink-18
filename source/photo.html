@@ -19,18 +19,18 @@
           </a>
           <button class="header__burger" type="button"></button>
         </div>
-        <nav class="header__nav nav">
-          <ul class="list-style-reset nav__list">
-            <li class="nav__item">
+        <nav class="header__main-nav main-nav">
+          <ul class="main-nav__list list-style-reset">
+            <li class="main-nav__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="nav__item">
+            <li class="main-nav__item">
               <a href="photo.html">Фотографии</a>
             </li>
-            <li class="nav__item">
+            <li class="main-nav__item">
               <a href="#">Конкурс</a>
             </li>
-            <li class="nav__item">
+            <li class="main-nav__item">
               <a href="#">HTML Academy</a>
             </li>
           </ul>
@@ -59,8 +59,8 @@
         </a>
         <div class="panorama__description description">
           <div class="description__name-data">
-            <b>Анна</b>
-            <small>(5 минут назад)</small>
+            <b class="description__name">Анна</b>
+            <small class="description__time">(5 минут назад)</small>
           </div>
           <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <div class="description__like">
@@ -72,7 +72,7 @@
 
       <section class="gallery">
         <h2 class="visually-hidden">Галерея</h2>
-        <ul class="list-style-reset gallery__list">
+        <ul class="gallery__list list-style-reset">
           <li class="gallery__item card">
             <a class="card__img-wrap" href="#">
               <picture>
@@ -81,10 +81,10 @@
                 <img src="img/photo-car-mobile@1x.jpg" alt="Автомобиль">
               </picture>
             </a>
-            <div class="card__description card">
+            <div class="card__description">
               <div class="card__name-data">
-                <b>Левон</b>
-                <small>(5 часов назад)</small>
+                <b class="card__name">Левон</b>
+                <small class="card__time">(5 часов назад)</small>
               </div>
               <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <div class="card__like">
@@ -101,10 +101,10 @@
                 <img src="img/photo-drumset-mobile@1x.jpg" alt="Барабаны">
               </picture>
             </a>
-            <div class="card__description card">
+            <div class="card__description">
               <div class="card__name-data">
-                <b>Антон</b>
-                <small>(12 часов назад)</small>
+                <b class="card__name">Антон</b>
+                <small class="card__time">(12 часов назад)</small>
               </div>
               <p>Соседи будут рады!</p>
               <div class="card__like">
@@ -121,10 +121,10 @@
                 <img src="img/photo-window-mobile@1x.jpg" alt="Окна">
               </picture>
             </a>
-            <div class="card__description card">
+            <div class="card__description">
               <div class="card__name-data">
-                <b>Борис</b>
-                <small>(20 часов назад)</small>
+                <b class="card__name">Борис</b>
+                <small class="card__time">(20 часов назад)</small>
               </div>
               <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="card__like">
@@ -141,10 +141,10 @@
                 <img src="img/photo-fair-mobile@1x.jpg" alt="Ярмарка">
               </picture>
             </a>
-            <div class="card__description card">
+            <div class="card__description">
               <div class="card__name-data">
-                <b>Сергей</b>
-                <small>(25 часов назад)</small>
+                <b class="card__name">Сергей</b>
+                <small class="card__time">(25 часов назад)</small>
               </div>
               <p>Самая кубанская в мире!</p>
               <div class="card__like">
@@ -161,10 +161,10 @@
                 <img src="img/photo-pov-mobile@1x.jpg" alt="Горы">
               </picture>
             </a>
-            <div class="card__description card">
+            <div class="card__description">
               <div class="card__name-data">
-                <b>Максим</b>
-                <small>(40 часов назад)</small>
+                <b class="card__name">Максим</b>
+                <small class="card__time">(40 часов назад)</small>
               </div>
               <p>Где снег-то?</p>
               <div class="card__like">
@@ -181,10 +181,10 @@
                 <img src="img/photo-wing-mobile@1x.jpg" alt="Крыло самолета">
               </picture>
             </a>
-            <div class="card__description card">
+            <div class="card__description">
               <div class="card__name-data">
-                <b>Надежда</b>
-                <small>(45 часов назад)</small>
+                <b class="card__name">Надежда</b>
+                <small class="card__time">(45 часов назад)</small>
               </div>
               <p>Всем GM и взаимные лайки!</p>
               <div class="card__like">
@@ -196,9 +196,9 @@
         </ul>
       </section>
 
-      <section class="slogan">
+      <div class="slogan">
         <p>Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
-      </section>
+      </div>
 
       <section class="editor">
         <h2 class="visually-hidden">Редактор фото</h2>
@@ -210,7 +210,7 @@
             </picture>
           </div>
           <form class="editor__controls controls" action="https://echo.htmlacademy.ru" method="POST">
-            <ul class="list-style-reset controls__tools tools">
+            <ul class="controls__tools tools list-style-reset">
               <li class="tools__item tools__item--crop">
                 <button type="button" aria-label="Кадрирование"></button>
                 <div class="tools__range tools__range--crop"></div>
@@ -225,8 +225,8 @@
               </li>
             </ul>
             <div class="controls__buttons">
-              <button type="submit">Запостить</button>
-              <button type="reset" disabled>Отмена</button>
+              <button class="controls__post" type="submit">Запостить</button>
+              <button class="controls__dismiss" type="reset" disabled>Отмена</button>
             </div>
           </form>
         </div>
@@ -241,7 +241,7 @@
             <img src="img/logo-pink-blue-mobile.svg" alt="Логотип">
           </picture>
         </a>
-        <ul class="list-style-reset footer__social-links social">
+        <ul class="footer__social-links social list-style-reset">
           <li class="social__item">
             <a class="twitter" href="#" aria-label="Twitter"></a>
           </li>

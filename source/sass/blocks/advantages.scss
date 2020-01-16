@@ -62,19 +62,19 @@
   }
 }
 
-.grey {
+.advantages__item--grey {
   @include desktop {
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
   }
 }
 
-.pink {
+.advantages__item--pink {
   @include desktop {
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
   }
 }
 
-.smile {
+.advantages__item--smile {
   @include desktop {
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
   }
