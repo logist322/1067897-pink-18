@@ -4,6 +4,7 @@ var list = document.querySelector('.header__main-nav');
 var headerLogoWrap = document.querySelector('.header__logo-wrap');
 var greeting = document.querySelector('.greeting');
 var intro = document.querySelector('.intro__heading-wrap');
+var competition = document.querySelector('.competition__heading-wrap');
 
 burger.addEventListener('click', function(evt) {
   evt.preventDefault();
@@ -14,7 +15,9 @@ burger.addEventListener('click', function(evt) {
 
   if (intro) {
     intro.classList.toggle('intro__heading-wrap--opened');
-  } else {
-      greeting.classList.toggle('greeting--opened');
-    };
+  } else if (greeting) {
+    greeting.classList.toggle('greeting--opened');
+  } else if (competition) {
+    competition.classList.toggle('competition__heading-wrap--opened');
+  };
 });

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrap">
+        <div class="header__logo-wrap">
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" alt="Логотип">
+            </picture>
+          </a>
+          <button class="header__burger" type="button"></button>
+        </div>
+        <nav class="header__main-nav main-nav">
+          <ul class="main-nav__list list-style-reset">
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="competition">
+        <div class="competition__heading-wrap">
+          <h1 class="competition__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+        <div class="competition__subtitle-wrap">
+          <p class="competition__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="competition__begging">Пожалуйста, заполните форму ниже:</span></p>
+        </div>
+      </section>
+
+      <section class="prize">
+        <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
+        <div class="prize__container">
+          <form class="prize__form" action="https://echo.htmlacademy.ru" method="POST">
+          </form>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- <footer class="footer">
+      <div class="footer__container">
+        <a class="footer__logo-wrap" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип">
+          </picture>
+        </a>
+        <ul class="footer__social-links social list-style-reset">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#" aria-label="Twitter"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#" aria-label="Facebook"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#" aria-label="YouTube"></a>
+          </li>
+        </ul>
+        <div class="footer__academy-wrap">
+          <a class="footer__academy" href="#">Разработано</a>
+        </div>
+      </div>
+    </footer> -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
