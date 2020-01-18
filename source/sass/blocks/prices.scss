@@ -17,6 +17,8 @@
 
 .prices__container {
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 
   @include tablet {
     margin: 0 auto;
@@ -29,6 +31,7 @@
 
 .prices__table {
   width: 832px;
+  flex-shrink: 0;
 
   @include tablet {
     width: 100%;

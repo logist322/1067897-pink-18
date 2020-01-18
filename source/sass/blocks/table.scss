@@ -1,10 +1,5 @@
 .table {
-  transform: translateX(-256px);
   background-color: #e5e5e5;
-
-  @include tablet {
-    transform: translateX(0);
-  }
 }
 
 .table__head th:first-child {
