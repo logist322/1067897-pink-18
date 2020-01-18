@@ -1,0 +1,64 @@
+.achievements {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.achievements__item:not(:first-child) {
+  margin-top: 42px;
+
+  @include desktop {
+    margin-top: 40px;
+  }
+}
+
+.achievements__item {
+  @include desktop {
+    width: 32%;
+    margin-top: 40px;
+  }
+}
+
+.achievements__label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 70px;
+  font-family: $regular;
+  font-size: 18px;
+  color: #283645;
+  height: 40px;
+
+  @include tablet {
+    padding-left: 60px;
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+  }
+}
+
+.achievements__checkbox:focus ~ .achievements__label {
+  outline: 2px solid #4D90FE;
+}
+
+.achievements__checkbox:checked ~ .achievements__label::before {
+  background-image: url("../img/icon-check.svg");
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: 50% 8px;
+}

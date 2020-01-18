@@ -9,7 +9,7 @@
   background-position: left 50% bottom -210px;
 
   @include tablet {
-    padding: 175px 155px 140px;
+    padding: 175px 0 80px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: 1200px;
     background-position: left 50% bottom -290px;
@@ -42,7 +42,11 @@
 
   @include tablet {
     font-size: 50px;
-    max-width: 650px;
+    max-width: 475px;
+  }
+
+  @include desktop {
+    max-width: 750px;
   }
 }
 
@@ -50,17 +54,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 43px 37px 25px;
+  padding: 43px 37px 42px;
   background-color: #ffffff;
 
   @include tablet {
     font-size: 18px;
     line-height: 1.66;
-    padding: 93px 110px 75px;
+    padding: 93px 110px 50px;
   }
 
   @include desktop {
-    padding-bottom: 87px;
+    padding-bottom: 60px;
   }
 }
 
@@ -76,14 +80,18 @@
     font-size: 18px;
     line-height: 1.66;
     max-width: none;
-    width: 440px;
+    width: 490px;
   }
 
   @include desktop {
-    width: 580px;
+    width: 760px;
   }
 }
 
 .competition__begging {
   display: none;
+
+  @include tablet {
+    display: inline;
+  }
 }

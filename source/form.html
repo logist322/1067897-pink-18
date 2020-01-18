@@ -50,15 +50,93 @@
 
       <section class="prize">
         <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
-        <div class="prize__container">
-          <form class="prize__form" action="https://echo.htmlacademy.ru" method="POST">
-          </form>
-        </div>
-
+        <form class="prize__form participant-form" action="https://echo.htmlacademy.ru" method="POST">
+          <ul class="participant-form__name user-name list-style-reset">
+            <li class="user-name__item">
+              <label class="user-name__label" for="second-name">Фамилия:</label>
+              <input class="user-name__input" type="text" id="second-name" name="second-name" placeholder="Укажите фамилию *" required>
+            </li>
+            <li class="user-name__item">
+              <label class="user-name__label" for="first-name">Имя:</label>
+              <input class="user-name__input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *" required>
+            </li>
+            <li class="user-name__item">
+              <label class="user-name__label" for="patronymic">Отчество:</label>
+              <input class="user-name__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
+          <fieldset class="participant-form__applications">
+            <legend class="participant-form__applications-legend">С каким приложением путешествовали?</legend>
+            <ul class="participant-form__applications-list applications list-style-reset">
+              <li class="applications__item">
+                <input class="applications__radio visually-hidden" type="radio" id="ios" name="application" value="ios" checked>
+                <label class="applications__label" for="ios">Pink для iOS</label>
+              </li>
+              <li class="applications__item">
+                <input class="applications__radio visually-hidden" type="radio" id="android" name="application" value="android">
+                <label class="applications__label" for="android">Pink на Android</label>
+              </li>
+              <li class="applications__item">
+                <input class="applications__radio visually-hidden" type="radio" id="microsoft" name="application" value="microsoft">
+                <label class="applications__label" for="microsoft">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="participant-form__contact-info">
+            <legend class="participant-form__contact-info-legend">Контактная информация</legend>
+            <ul class="participant-form__contact-info-list contact-info list-style-reset">
+              <li class="contact-info__item contact-info__item--phone">
+                <label class="contact-info__label" for="phone">Номер телефона</label>
+                <input class="contact-info__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="contact-info__item contact-info__item--email">
+                <label class="contact-info__label" for="email">Адрес почты</label>
+                <input class="contact-info__input" type="email" id="email" name="email" placeholder="Введите почту *" required>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="participant-form__achievements">
+            <legend class="participant-form__achievements-legend">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="participant-form__achievements-list achievements list-style-reset">
+              <li class="achievements__item">
+                <input class="achievements__checkbox visually-hidden" type="checkbox" id="shark" name="achievements" value="shark" checked>
+                <label class="achievements__label" for="shark">Сделал селфи с акулой</label>
+              </li>
+              <li class="achievements__item">
+                <input class="achievements__checkbox visually-hidden" type="checkbox" id="beach" name="achievements" value="beach" checked>
+                <label class="achievements__label" for="beach">Обгорел на пляже</label>
+              </li>
+              <li class="achievements__item">
+                <input class="achievements__checkbox visually-hidden" type="checkbox" id="chuck" name="achievements" value="chuck">
+                <label class="achievements__label" for="chuck">Видел Чака Норриса</label>
+              </li>
+              <li class="achievements__item">
+                <input class="achievements__checkbox visually-hidden" type="checkbox" id="souvenir" name="achievements" value="souvenir">
+                <label class="achievements__label" for="souvenir">Накупил сувениров</label>
+              </li>
+              <li class="achievements__item">
+                <input class="achievements__checkbox visually-hidden" type="checkbox" id="tower" name="achievements" value="tower" checked>
+                <label class="achievements__label" for="tower">Удержал башню</label>
+              </li>
+              <li class="achievements__item">
+                <input class="achievements__checkbox visually-hidden" type="checkbox" id="hotel" name="achievements" value="hotel">
+                <label class="achievements__label" for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="participant-form__emotions">
+            <legend class="participant-form__emotions-legend">Опишите свои эмоции</legend>
+            <textarea class="participant-form__emotions-textarea" name="emotions" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <div class="participant-form__footer form-footer">
+            <button class="form-footer__button" type="submit">Отправить форму</button>
+            <small class="form-footer__note"><span class="form-footer__star">*</span> — обязательные <span class="form-footer__optional-text">для заполнения</span> поля</small>
+          </div>
+        </form>
       </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__container">
         <a class="footer__logo-wrap" href="index.html">
           <picture>
@@ -81,7 +159,7 @@
           <a class="footer__academy" href="#">Разработано</a>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <script src="js/script.js"></script>
   </body>
