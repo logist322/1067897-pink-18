@@ -32,12 +32,12 @@
   text-align: center;
 
   @include tablet {
-  margin-top: 0;
-  margin-left: auto;
+    margin-top: 0;
+    margin-left: auto;
   }
 }
 
-.form-footer__star  {
+.form-footer__star {
   color: #d22856;
 }
 
