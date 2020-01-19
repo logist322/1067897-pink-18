@@ -29,7 +29,8 @@
   }
 }
 
-.main-nav__item a {
+.main-nav__link {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -47,5 +48,42 @@
     font-family: $regular;
     padding: 0;
     text-transform: none;
+  }
+}
+
+.main-nav__link:hover {
+  color: #d22856;
+}
+
+.main-nav__link:active {
+  opacity: 0.3;
+
+  @include desktop {
+    color: #ffffff;
+  }
+}
+
+.main-nav__link--active::after {
+  @include desktop {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #ffffff;
+  }
+}
+
+.main-nav__link--active:hover {
+  @include desktop {
+    color: #ffffff;
+  }
+}
+
+.main-nav__link--active:active {
+  @include desktop {
+    color: #ffffff;
+    opacity: 1;
   }
 }

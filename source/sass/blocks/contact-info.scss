@@ -55,22 +55,31 @@
   border-radius: 1px;
 
   @include tablet {
-    border-right-width: 62px;
+    border-right-width: 60px;
     margin-top: 0;
   }
+}
+
+.contact-info__input:hover {
+  border-color: #283645;
+}
+
+.contact-info__input:active {
+  border-color: #d22856;
 }
 
 .contact-info__item--phone::after {
   @include tablet {
     position: absolute;
     content: "";
-    top: 22px;
-    right: 22px;
-    width: 20px;
-    height: 20px;
+    top: 2px;
+    right: 2px;
+    width: 59px;
+    height: 59px;
+    background-color: #e5e5e5;
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 20px 20px;
     background-position: 50% 50%;
   }
 }
@@ -79,13 +88,14 @@
   @include tablet {
     position: absolute;
     content: "";
-    top: 22px;
-    right: 22px;
-    width: 20px;
-    height: 20px;
+    top: 2px;
+    right: 2px;
+    width: 59px;
+    height: 59px;
+    background-color: #e5e5e5;
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 20px 20px;
     background-position: 50% 50%;
   }
 }

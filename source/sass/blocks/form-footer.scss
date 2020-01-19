@@ -9,6 +9,7 @@
 }
 
 .form-footer__button {
+  cursor: pointer;
   height: 64px;
   background-color: #2aab6d;
   border-radius: 2px;
@@ -21,6 +22,19 @@
   @include tablet {
     width: 300px;
   }
+}
+
+.form-footer__button:hover {
+  background-color: #1c9b5e;
+}
+
+.form-footer__button:active {
+  background-color: #1c9b5e;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form-footer__button:disabled {
+  background-color: #e5e5e5;
 }
 
 .form-footer__note {

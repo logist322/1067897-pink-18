@@ -204,6 +204,14 @@
   }
 }
 
+.participant-form__emotions-textarea:hover {
+  border-color: #283645;
+}
+
+.participant-form__emotions-textarea:active {
+  border-color: #d22856;
+}
+
 .participant-form__footer {
   order: 4;
   padding: 0 20px 20px;

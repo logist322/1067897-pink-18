@@ -23,6 +23,14 @@
   background-repeat: no-repeat;
 }
 
+.social__item a:hover {
+  border-color: #283645;
+}
+
+.social__item a:active {
+  opacity: 0.1;
+}
+
 .social__link--twitter {
   background-image: url("../img/icon-twitter.svg");
   background-size: 18px 14px;

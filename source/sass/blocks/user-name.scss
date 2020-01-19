@@ -54,3 +54,11 @@
     height: 63px;
   }
 }
+
+.user-name__input:hover {
+  border-color: #283645;
+}
+
+.user-name__input:active {
+  border-color: #d22856;
+}

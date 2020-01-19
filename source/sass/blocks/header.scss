@@ -13,6 +13,11 @@
 .header--opened {
   position: relative;
   background-color: #283645;
+
+  @include desktop {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .header__wrap {

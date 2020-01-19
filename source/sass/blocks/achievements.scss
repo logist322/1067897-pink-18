@@ -25,6 +25,7 @@
 }
 
 .achievements__label {
+  cursor: pointer;
   display: flex;
   align-items: center;
   position: relative;
@@ -49,6 +50,14 @@
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+  }
+
+  &:hover::before {
+    border-color: #283645;
+  }
+
+  &:active::before {
+    border-color: #d22856;
   }
 }
 

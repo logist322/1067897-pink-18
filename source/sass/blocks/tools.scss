@@ -1,23 +1,42 @@
 .tools {
   display: flex;
   justify-content: space-around;
+  padding: 0 20px;
 
   @include tablet {
     flex-direction: column;
     position: relative;
     top: -18px;
+    padding-left: 0;
   }
 
   @include desktop {
-    top: -18px;
+    padding-right: 30px;
   }
 }
 
 .tools__item {
   @include tablet {
+    position: relative;
     flex-grow: 1;
     display: flex;
     align-items: center;
+  }
+}
+
+.tools__item::after {
+  @include tablet {
+    position: absolute;
+    content: "";
+    width: 275px;
+    height: 1px;
+    background-color: #dddfe0;
+    bottom: 0;
+    left: 0;
+  }
+
+  @include desktop {
+    width: 410px;
   }
 }
 
@@ -54,10 +73,11 @@
 }
 
 .tools__item--bucket button {
-  background-image: url("../img/icon-editor-fill.svg");
+  background-image: url("../img/icon-editor-fill-grey.svg");
   background-size: 48px;
 
   @include tablet {
+    background-image: url("../img/icon-editor-fill.svg");
     background-size: 24px;
   }
 
@@ -67,14 +87,29 @@
 }
 
 .tools__item--contrast button {
-  background-image: url("../img/icon-editor-contrast.svg");
+  background-image: url("../img/icon-editor-contrast-grey.svg");
   background-size: 32px;
 
   @include tablet {
+    background-image: url("../img/icon-editor-contrast.svg");
     background-size: 16px;
   }
 
   @include desktop {
     background-size: 32px;
+  }
+}
+
+.tools__range {
+  display: none;
+
+  @include tablet {
+    display: block;
+    width: 202px;
+    height: 14px;
+  }
+
+  @include desktop {
+    width: 288px;
   }
 }
