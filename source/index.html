@@ -2,11 +2,242 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
+    <header class="header">
+      <div class="header__wrap">
+        <div class="header__logo-wrap">
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" alt="Логотип">
+            </picture>
+          </a>
+          <button class="header__burger" type="button"></button>
+        </div>
+        <nav class="header__main-nav main-nav">
+          <ul class="main-nav__list list-style-reset">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main>
+      <h1 class="visually-hidden">Pink</h1>
+      <section class="greeting">
+        <div class="greeting__wrap">
+          <div class="greeting__container">
+            <h2 class="visually-hidden">Ссылки на приложение</h2>
+            <div class="greeting__slogan-wrap">
+              <p class="greeting__slogan">Взгляните на жизнь иначе!</p>
+            </div>
+            <a class="greeting__download" href="#">Скачать приложение</a>
+            <ul class="greeting__link-list links list-style-reset">
+              <li class="links__item apple">
+                <a href="#">
+                  <span class="visually-hidden">Apple</span>
+                </a>
+              </li>
+              <li class="links__item android">
+                <a href="#">
+                  <span class="visually-hidden">Android</span>
+                </a>
+              </li>
+              <li class="links__item windows">
+                <a href="#">
+                  <span class="visually-hidden">Windows</span>
+                </a>
+              </li>
+            </ul>
+            <p class="greeting__subtitle">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
+      </section>
 
+      <section class="about">
+        <h2 class="visually-hidden">О нас</h2>
+        <div class="about__container">
+          <div class="about__title-wrap">
+            <p class="about__title-first">Устали от серости мегаполиса?</p>
+            <p class="about__title-second">Нам есть, что вам предложить!</p>
+          </div>
+          <ul class="about__advantages-list advantages list-style-reset">
+            <li class="advantages__item advantages__item--grey">
+              <h3 class="advantages__item-heading">Поднимает настроение</h3>
+              <p class="advantages__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item advantages__item--pink">
+              <h3 class="advantages__item-heading">Меняет мир вокруг</h3>
+              <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
+            </li>
+            <li class="advantages__item advantages__item--smile">
+              <h3 class="advantages__item-heading">Заводит новых друзей</h3>
+              <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="effect">
+        <div class="effect__container">
+          <h2 class="effect__heading">Эффект на&nbsp;24 часа!</h2>
+          <p class="effect__paragraph">Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
+          <a class="effect__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews__container">
+          <ul class="reviews__slider slider list-style-reset">
+            <li class="slider__item">
+              <blockquote>
+                <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                <cite>
+                  <b>Николай Петров</b>
+                  <small>25 лет, водитель трамвая</small>
+                </cite>
+              </blockquote>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="prices">
+        <h2 class="visually-hidden">Цены</h2>
+        <div class="prices__container">
+          <table class="prices__table table">
+            <tr class="table__head">
+              <th></th>
+              <th>
+                <div class="table__head-cell-wrap">
+                  <span class="table__head-name">База</span>
+                  <span class="table__head-price">1,99 USD</span>
+                </div>
+              </th>
+              <th>
+                <div class="table__head-cell-wrap">
+                  <span class="table__head-name">Стандарт</span>
+                  <span class="table__head-price">3,99 USD</span>
+                </div>
+              <th>
+                <div class="table__head-cell-wrap">
+                  <span class="table__head-name">Анлим</span>
+                  <span class="table__head-price">9,99 USD</span>
+                </div>
+              </th>
+            </tr>
+            <tr class="table__body">
+              <td>Розовый фильтр</td>
+              <td class="table__cell table__cell--yes">
+                <span class="table__cell-text">Розовый фильтр</span>
+              </td>
+              <td class="table__cell table__cell--yes">
+                <span class="table__cell-text">Розовый фильтр</span>
+              </td>
+              <td class="table__cell table__cell--yes">
+                <span class="table__cell-text">Розовый фильтр</span>
+              </td>
+            </tr>
+            <tr class="table__body">
+              <td>Смайлики</td>
+              <td class="table__cell table__cell--no">
+                <span class="table__cell-text">Смайлики</span>
+              </td>
+              <td class="table__cell table__cell--yes">
+                <span class="table__cell-text">Смайлики</span>
+              </td>
+              <td class="table__cell table__cell--yes">
+                <span class="table__cell-text">Смайлики</span>
+              </td>
+            </tr>
+            <tr class="table__body">
+              <td>Комментарии</td>
+              <td class="table__cell table__cell--no">
+                <span class="table__cell-text">Комментарии</span>
+              </td>
+              <td class="table__cell table__cell--no">
+                <span class="table__cell-text">Комментарии</span>
+              </td>
+              <td class="table__cell table__cell--yes">
+                <span class="table__cell-text">Комментарии</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__container">
+          <h2 class="contacts__heading">Остались вопросы? Свяжитесь с нами!</h2>
+          <ul class="contacts__list info list-style-reset">
+            <li class="info__item">
+              <p>Звоните:</p>
+              <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </li>
+            <li class="info__item">
+              <p>Пишите:</p>
+              <a class="info__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+            <li class="info__item">
+              <p>Приезжайте в гости:</p>
+              <a href="#">ул. Большая Конюшенная, 19/8</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="map">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CGxdJRZ~" frameborder="0" allowfullscreen="true"></iframe>
+      </section>
+    </main>
+
+    <footer class="footer footer--main">
+      <div class="footer__container">
+        <a class="footer__logo-wrap" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип">
+          </picture>
+        </a>
+        <ul class="footer__social-links social list-style-reset">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#" aria-label="Twitter"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#" aria-label="Facebook"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#" aria-label="YouTube"></a>
+          </li>
+        </ul>
+        <div class="footer__academy-wrap">
+          <a class="footer__academy" href="#">Разработано</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

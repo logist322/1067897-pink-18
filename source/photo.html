@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrap">
+        <div class="header__logo-wrap">
+          <a class="header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" alt="Логотип">
+            </picture>
+          </a>
+          <button class="header__burger" type="button"></button>
+        </div>
+        <nav class="header__main-nav main-nav">
+          <ul class="main-nav__list list-style-reset">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="intro__heading-wrap">
+          <h1 class="intro__heading">Фотографии пользователей</h1>
+        </div>
+        <div class="intro__subtitle-wrap">
+          <p class="intro__subtitle">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
+      </section>
+
+      <section class="panorama">
+        <h2 class="visually-hidden">Панорама</h2>
+        <a href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+            <img src="img/panorama-mobile@1x.jpg" alt="Панорама">
+          </picture>
+        </a>
+        <div class="panorama__description description">
+          <div class="description__name-data">
+            <b class="description__name">Анна</b>
+            <small class="description__time">(5 минут назад)</small>
+          </div>
+          <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <div class="description__like">
+            <button type="button" aria-label="Поставить лайк"></button>
+            <span>Нравится: 215</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2 class="visually-hidden">Галерея</h2>
+        <ul class="gallery__list list-style-reset">
+          <li class="gallery__item card">
+            <a class="card__img-wrap" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+                <img src="img/photo-car-mobile@1x.jpg" alt="Автомобиль">
+              </picture>
+            </a>
+            <div class="card__description">
+              <div class="card__name-data">
+                <b class="card__name">Левон</b>
+                <small class="card__time">(5 часов назад)</small>
+              </div>
+              <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="card__like">
+                <button type="button" aria-label="Поставить лайк"></button>
+                <span>Нравится: 215</span>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__item card">
+            <a class="card__img-wrap" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+                <img src="img/photo-drumset-mobile@1x.jpg" alt="Барабаны">
+              </picture>
+            </a>
+            <div class="card__description">
+              <div class="card__name-data">
+                <b class="card__name">Антон</b>
+                <small class="card__time">(12 часов назад)</small>
+              </div>
+              <p>Соседи будут рады!</p>
+              <div class="card__like">
+                <button type="button" aria-label="Поставить лайк"></button>
+                <span>Нравится: 666</span>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__item card">
+            <a class="card__img-wrap" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+                <img src="img/photo-window-mobile@1x.jpg" alt="Окна">
+              </picture>
+            </a>
+            <div class="card__description">
+              <div class="card__name-data">
+                <b class="card__name">Борис</b>
+                <small class="card__time">(20 часов назад)</small>
+              </div>
+              <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="card__like">
+                <button type="button" aria-label="Поставить лайк"></button>
+                <span>Нравится: 215</span>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__item card">
+            <a class="card__img-wrap" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+                <img src="img/photo-fair-mobile@1x.jpg" alt="Ярмарка">
+              </picture>
+            </a>
+            <div class="card__description">
+              <div class="card__name-data">
+                <b class="card__name">Сергей</b>
+                <small class="card__time">(25 часов назад)</small>
+              </div>
+              <p>Самая кубанская в мире!</p>
+              <div class="card__like">
+                <button type="button" aria-label="Поставить лайк"></button>
+                <span>Нравится: 4</span>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__item card">
+            <a class="card__img-wrap" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+                <img src="img/photo-pov-mobile@1x.jpg" alt="Горы">
+              </picture>
+            </a>
+            <div class="card__description">
+              <div class="card__name-data">
+                <b class="card__name">Максим</b>
+                <small class="card__time">(40 часов назад)</small>
+              </div>
+              <p>Где снег-то?</p>
+              <div class="card__like">
+                <button type="button" aria-label="Поставить лайк"></button>
+                <span>Нравится: 150</span>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__item card">
+            <a class="card__img-wrap" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+                <img src="img/photo-wing-mobile@1x.jpg" alt="Крыло самолета">
+              </picture>
+            </a>
+            <div class="card__description">
+              <div class="card__name-data">
+                <b class="card__name">Надежда</b>
+                <small class="card__time">(45 часов назад)</small>
+              </div>
+              <p>Всем GM и взаимные лайки!</p>
+              <div class="card__like">
+                <button type="button" aria-label="Поставить лайк"></button>
+                <span>Нравится: 2560</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <div class="slogan">
+        <p>Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+
+      <section class="editor">
+        <h2 class="visually-hidden">Редактор фото</h2>
+        <div class="editor__container">
+          <div class="editor__image-wrap">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+              <img src="img/photo-road-mobile@1x.jpg" alt="Дорога">
+            </picture>
+          </div>
+          <form class="editor__controls controls" action="https://echo.htmlacademy.ru" method="POST">
+            <ul class="controls__tools tools list-style-reset">
+              <li class="tools__item tools__item--crop">
+                <button type="button" aria-label="Кадрирование"></button>
+                <div class="tools__range range range--crop">
+                  <span class="range__scale"></span>
+                  <span class="range__control"></span>
+                </div>
+              </li>
+              <li class="tools__item tools__item--bucket">
+                <button type="button" aria-label="Заливка"></button>
+                <div class="tools__range range range--bucket">
+                  <span class="range__scale"></span>
+                  <span class="range__control"></span>
+                </div>
+              </li>
+              <li class="tools__item tools__item--contrast">
+                <button type="button" aria-label="Контраст"></button>
+                <div class="tools__range range range--contrast">
+                  <span class="range__scale"></span>
+                  <span class="range__control"></span>
+                </div>
+              </li>
+            </ul>
+            <div class="controls__general-range range">
+              <span class="range__scale"></span>
+              <span class="range__control"></span>
+            </div>
+            <div class="controls__buttons">
+              <button class="controls__post" type="submit">Запостить</button>
+              <button class="controls__dismiss" type="reset">Отмена</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <a class="footer__logo-wrap" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип">
+          </picture>
+        </a>
+        <ul class="footer__social-links social list-style-reset">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#" aria-label="Twitter"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#" aria-label="Facebook"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#" aria-label="YouTube"></a>
+          </li>
+        </ul>
+        <div class="footer__academy-wrap">
+          <a class="footer__academy" href="#">Разработано</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+.effect {
+  display: none;
+
+  @include tablet {
+    display: block;
+    background-color: #ffffff;
+    padding: 60px 20px 67px;
+  }
+
+  @include desktop {
+    padding: 65px 0 67px;
+    background-color: #f2f2f2;
+  }
+}
+
+.effect__container {
+  @include tablet {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 308px;
+    padding-top: 35px;
+    min-height: 241px;
+    width: 310px;
+  }
+
+  @include desktop {
+    width: 940px;
+    box-sizing: border-box;
+    min-height: 345px;
+    padding-left: 365px;
+    padding-top: 95px;
+  }
+
+  &::before {
+    @include tablet {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 238px;
+      height: 275px;
+      background: url("../img/icon-timer.svg") 50% 50% no-repeat;
+      background-size: contain;
+    }
+
+    @include desktop {
+      width: 298px;
+      height: 346px;
+    }
+  }
+
+  &::after {
+    @include tablet {
+      position: absolute;
+      top: 156px;
+      left: 119px;
+      transform: translate(-50%, -50%);
+      content: "24";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      width: 202px;
+      height: 202px;
+      border-radius: 50%;
+      font-family: $bold;
+      font-size: 96px;
+      color: #d22856;
+      border: 15px solid #d22856;
+      background-color: #ffffff;
+    }
+
+    @include desktop {
+      top: 195.5px;
+      left: 150px;
+      width: 253px;
+      height: 253px;
+      font-size: 120px;
+      border-width: 17px;
+    }
+  }
+}
+
+.effect__heading {
+  @include tablet {
+    font-family: $bold;
+    font-size: 30px;
+    line-height: 1.2;
+    max-width: 180px;
+  }
+
+  @include desktop {
+    line-height: 1;
+    max-width: none;
+  }
+}
+
+.effect__paragraph {
+  @include tablet {
+    font-family: $regular;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #283645;
+    margin-top: 13px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 1.66;
+    margin-top: 25px;
+  }
+}
+
+.effect__link {
+  @include tablet {
+    font-family: $regular;
+    font-size: 14px;
+    margin-top: 15px;
+    color: #d22856;
+    text-decoration: underline;
+  }
+
+  @include desktop {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+}

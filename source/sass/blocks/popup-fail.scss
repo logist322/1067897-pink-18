@@ -1,0 +1,105 @@
+.popup-fail {
+  background-color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  display: none; ////////Пока нет js
+  flex-direction: column;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  @include tablet {
+    width: 460px;
+    border-radius: 3px;
+  }
+
+  @include desktop {
+    width: 780px;
+    border-radius: 5px;
+  }
+}
+
+.popup-fail__text-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 275px;
+  margin: 0 auto;
+  padding: 40px 0 0;
+
+  @include tablet {
+    width: 307px;
+  }
+
+  @include desktop {
+    width: 397px;
+    padding-bottom: 30px;
+  }
+}
+
+.popup-fail__title {
+  font-family: $bold;
+  font-size: 18px;
+  text-align: center;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 1.33;
+  }
+}
+
+.popup-fail__message {
+  margin-top: 35px;
+  font-family: $regular;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: #283645;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+.popup-fail__button-wrap {
+  padding: 50px 0;
+  width: 100%;
+  display: flex;
+  background-color: #ffffff;
+
+  @include desktop {
+    background-color: #f2f2f2;
+  }
+}
+
+.popup-fail__button {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 280px;
+  height: 65px;
+  border: none;
+  border-radius: 2px;
+  background-color: #2aab6d;
+  font-family: $bold;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  @include tablet {
+    width: 300px;
+  }
+
+  @include desktop {
+    width: 460px;
+  }
+}
+
+.popup-fail__button:hover {
+  background-color: #1c9b5e;
+}
+
+.popup-fail__button:active {
+  background-color: #1c9b5e;
+  color: rgba(255, 255, 255, 0.3);
+}

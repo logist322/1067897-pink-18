@@ -1,0 +1,159 @@
+.greeting {
+  background-color: #1d2631;
+  padding: 90px 20px 30px;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-position: left 0 bottom 280px, left 50% bottom 280px;
+  background-size: 258px auto, 100% auto;
+  background-repeat: no-repeat, no-repeat;
+
+  @include tablet {
+    padding: 110px 20px;
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: left -20px bottom 0, left 50% bottom 0;
+    background-size: auto 545px, auto 729px;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  @include desktop {
+    padding: 110px 0 0;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: left 50% bottom 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+.greeting--opened {
+  padding-top: 22px;
+
+  @include tablet {
+    padding-top: 0;
+  }
+
+  @include desktop {
+    padding: 110px 0 0;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: left 50% bottom 0;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+.greeting__wrap {
+  @include desktop {
+    width: 940px;
+    margin: 0 auto;
+    padding-bottom: 125px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: left 20px bottom 0;
+    background-size: auto 645px;
+    background-repeat: no-repeat;
+  }
+}
+
+.greeting__container {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  @include tablet {
+    width: 48.39%;
+  }
+
+  @include desktop {
+    width: 300px;
+  }
+}
+
+.greeting__slogan-wrap {
+  margin: 0 25px;
+  align-self: center;
+  font-family: $light;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  color: #ffffff;
+  max-width: 230px;
+
+  @include tablet {
+    margin: 90px 55px 0;
+    font-size: 40px;
+    max-width: none;
+  }
+
+  @include desktop {
+    margin: 110px 35px 0;
+    font-size: 50px;
+  }
+}
+
+.greeting__download {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ffffff;
+  border-radius: 27.5px;
+  height: 55px;
+  font-family: $bold;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 340px auto 0;
+
+  @include tablet {
+    margin-top: 30px;
+    max-width: 380px;
+  }
+
+  @include desktop {
+    margin-top: 50px;
+    font-size: 21px;
+  }
+}
+
+.greeting__download:hover {
+  background-color: #ffffff;
+  color: #d22856;
+}
+
+.greeting__download:active {
+  background-color: #ffffff;
+  color: rgba(210, 40, 86, 0.3);
+}
+
+.greeting__link-list {
+  margin: 32px auto 0;
+  max-width: 380px;
+  width: 100%;
+
+  @include tablet {
+    margin-top: 45px;
+  }
+
+  @include desktop {
+    margin-top: 65px;
+  }
+}
+
+.greeting__subtitle {
+  width: 230px;
+  margin: 28px auto 0;
+  font-family: $light;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
+  text-align: center;
+
+  @include tablet {
+    width: 295px;
+    font-size: 18px;
+    line-height: 1.33;
+    margin-top: 40px;
+  }
+
+  @include desktop {
+    margin-top: 60px;
+  }
+}

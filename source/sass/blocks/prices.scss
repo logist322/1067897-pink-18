@@ -1,0 +1,40 @@
+.prices {
+  padding: 125px 0 100px;
+  background-color: #f2f2f2;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+
+  @include tablet {
+    padding: 110px 20px 70px;
+  }
+
+  @include desktop {
+    padding: 157px 20px 70px;
+    background-size: 100%;
+  }
+}
+
+.prices__container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  @include tablet {
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    width: 940px;
+  }
+}
+
+.prices__table {
+  width: 832px;
+  flex-shrink: 0;
+
+  @include tablet {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

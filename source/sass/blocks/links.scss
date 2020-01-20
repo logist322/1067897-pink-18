@@ -1,0 +1,23 @@
+.links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links__item a {
+  display: block;
+  width: 47px;
+  height: 56px;
+}
+
+.apple a {
+  background: url("../img/logo-apple.svg") 50% 50% no-repeat;
+}
+
+.android a {
+  background: url("../img/logo-android.svg") 50% 50% no-repeat;
+}
+
+.windows a {
+  background: url("../img/logo-microsoft.svg") 50% 50% no-repeat;
+}
