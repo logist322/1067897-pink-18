@@ -43,6 +43,10 @@
   padding: 19px 20px;
   word-break: break-all;
 
+  @include tablet {
+    padding-bottom: 18px;
+  }
+
   @include desktop {
     display: inline;
     font-family: $regular;
@@ -76,14 +80,10 @@
 }
 
 .main-nav__link--active:hover {
-  @include desktop {
-    color: #ffffff;
-  }
+  color: #ffffff;
 }
 
 .main-nav__link--active:active {
-  @include desktop {
-    color: #ffffff;
-    opacity: 1;
-  }
+  color: #ffffff;
+  opacity: 1;
 }

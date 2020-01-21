@@ -77,4 +77,8 @@
   width: 23px;
   height: 22px;
   background: url("../img/icon-menu-cross.svg") 50% 50% no-repeat;
+
+  @include tablet {
+    margin-top: auto;
+  }
 }

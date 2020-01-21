@@ -11,7 +11,7 @@
     background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
     background-size: auto 520px;
-    background-position: 50% 0;
+    background-position: 50% 6px;
   }
 
   @include desktop {
@@ -50,7 +50,7 @@
   }
 
   @include desktop {
-    margin-top: 60px;
+    margin-top: 65px;
     font-size: 50px;
   }
 }
@@ -74,7 +74,7 @@
   max-width: 450px;
 
   @include tablet {
-    margin-top: 118px;
+    margin-top: 122px;
     margin-left: 310px;
     max-width: 322px;
   }

@@ -1,5 +1,5 @@
 .reviews {
-  padding: 45px 20px 55px;
+  padding: 45px 20px 8px;
   background-color: #ffffff;
 
   @include tablet {
@@ -7,7 +7,7 @@
   }
 
   @include desktop {
-    padding: 185px 0 35px;
+    padding: 185px 0 37px;
   }
 }
 
@@ -28,5 +28,19 @@
       background: url("../img/icon-quotes.svg") 50% 50% no-repeat;
       background-size: contain;
     }
+  }
+}
+
+.reviews__dots {
+  width: 62px;
+  margin: 35px auto 0;
+  color: #ffffff;
+
+  @include tablet {
+    margin-top: 40px;
+  }
+
+  @include desktop {
+    display: none;
   }
 }

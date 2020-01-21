@@ -2,7 +2,7 @@
   background-color: #1d2631;
   padding: 90px 20px 30px;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-position: left 0 bottom 280px, left 50% bottom 280px;
+  background-position: left 0 bottom 275px, left 50% bottom 275px;
   background-size: 258px auto, 100% auto;
   background-repeat: no-repeat, no-repeat;
 
@@ -43,9 +43,9 @@
   @include desktop {
     width: 940px;
     margin: 0 auto;
-    padding-bottom: 125px;
+    padding-bottom: 120px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: left 20px bottom 0;
+    background-position: left 18px bottom 0;
     background-size: auto 645px;
     background-repeat: no-repeat;
   }
@@ -125,8 +125,7 @@
 
 .greeting__link-list {
   margin: 32px auto 0;
-  max-width: 380px;
-  width: 100%;
+  width: 210px;
 
   @include tablet {
     margin-top: 45px;
@@ -139,7 +138,7 @@
 
 .greeting__subtitle {
   width: 230px;
-  margin: 28px auto 0;
+  margin: 25px auto 0;
   font-family: $light;
   font-size: 14px;
   line-height: 1.71;
