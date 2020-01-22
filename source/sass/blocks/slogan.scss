@@ -1,0 +1,27 @@
+.slogan {
+  display: flex;
+  padding: 18px 20px 43px;
+  background-color: #ffffff;
+
+  @include tablet {
+    padding: 42px 20px 70px;
+  }
+
+  @include desktop {
+    padding: 8px 0 65px;
+  }
+}
+
+.slogan p {
+  margin: 0 auto;
+  font-family: $regular;
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+  color: #283645;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}

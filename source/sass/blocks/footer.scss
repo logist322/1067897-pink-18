@@ -1,0 +1,90 @@
+.footer {
+  padding: 40px 0;
+  background-color: #ffffff;
+
+  @include tablet {
+    padding: 36px 20px;
+  }
+
+  @include desktop {
+    padding: 70px 0;
+  }
+}
+
+.footer--main {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.footer__container {
+  margin: 0 auto;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    width: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  @include desktop {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.footer__logo-wrap {
+  width: 147px;
+}
+
+.footer img {
+  display: block;
+  width: 100%;
+}
+
+.footer__social-links {
+  margin-top: 40px;
+
+  @include tablet {
+    margin-top: 3px;
+  }
+}
+
+.footer__academy-wrap {
+  @include tablet {
+    width: 147px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 14px;
+  }
+}
+
+.footer__academy {
+  margin-top: 37px;
+  display: flex;
+  align-items: center;
+  padding-right: 42px;
+  height: 34px;
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-position: right 0 top 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: $regular;
+  font-size: 14px;
+  color: #283645;
+
+  @include tablet {
+    margin-top: 0;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
+}

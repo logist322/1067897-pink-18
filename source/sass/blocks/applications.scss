@@ -1,0 +1,60 @@
+.applications {
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    padding: 0 73px;
+  }
+}
+
+.applications__item:not(:first-child) {
+  margin-top: 35px;
+}
+
+.applications__label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 70px;
+  font-family: $regular;
+  font-size: 18px;
+  color: #283645;
+  height: 40px;
+
+  @include tablet {
+    padding-left: 60px;
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+  }
+
+  &:hover::before {
+    border-color: #283645;
+  }
+
+  &:active::before {
+    border-color: #d22856;
+  }
+}
+
+.applications__radio:focus ~ .applications__label {
+  outline: 2px solid #4d90fe;
+}
+
+.applications__radio:checked ~ .applications__label::before {
+  background-image: url("../img/icon-radio.svg");
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 50% 50%;
+}
