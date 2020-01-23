@@ -101,6 +101,7 @@
   font-family: $bold;
   font-size: 18px;
   text-align: center;
+  width: 100%;
 
   @include desktop {
     font-size: 30px;
@@ -115,6 +116,7 @@
   line-height: 1.71;
   text-align: center;
   color: #283645;
+  width: 100%;
 
   @include tablet {
     text-align: left;
