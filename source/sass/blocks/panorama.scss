@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
 
   @include tablet {
     padding-bottom: 50px;
@@ -12,11 +12,29 @@
 
 .panorama a {
   width: 100%;
+
+  @include tablet {
+    height: 77.12vw;
+  }
+
+  @include desktop {
+    height: auto;
+  }
 }
 
 .panorama img {
   width: 100%;
   display: block;
+
+  @include tablet {
+    width: 100vw;
+    height: 100%;
+  }
+
+  @include desktop {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .panorama__description {
