@@ -11,6 +11,7 @@
 }
 
 .panorama a {
+  position: relative;
   width: 100%;
 
   @include tablet {
@@ -19,6 +20,34 @@
 
   @include desktop {
     height: auto;
+  }
+}
+
+.panorama a::before {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  content: "Панорама дня";
+  width: 140px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d22856;
+  font-family: $bold;
+  font-size: 12px;
+  line-height: 1;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include tablet {
+    top: 58px;
+  }
+
+  @include desktop {
+    top: 53px;
+    right: 130px;
   }
 }
 
