@@ -16,11 +16,9 @@
       <div class="header__wrap">
         <div class="header__logo-wrap">
           <a class="header__logo" href="index.html">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img src="img/logo-pink-white-mobile.svg" alt="Логотип">
-            </picture>
+            <svg class="header__logo-svg header__logo-svg--mobile" width="75" height="22"><use xlink:href="img/sprite.svg#logo-header-mobile"></use></svg>
+            <svg class="header__logo-svg header__logo-svg--tablet" width="147" height="40"><use xlink:href="img/sprite.svg#logo-header-tablet"></use></svg>
+            <svg class="header__logo-svg header__logo-svg--desktop" width="147" height="40"><use xlink:href="img/sprite.svg#logo-header-desktop"></use></svg>
           </a>
           <button class="header__burger" type="button"></button>
         </div>
@@ -144,10 +142,8 @@
     <footer class="footer">
       <div class="footer__container">
         <a class="footer__logo-wrap" href="index.html">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип">
-          </picture>
+          <svg class="footer__logo-svg footer__logo-svg--mobile" width="147" height="40"><use xlink:href="img/sprite.svg#logo-footer-mobile"></use></svg>
+          <svg class="footer__logo-svg footer__logo-svg--desktop" width="147" height="40"><use xlink:href="img/sprite.svg#logo-footer-desktop"></use></svg>
         </a>
         <ul class="footer__social-links social list-style-reset">
           <li class="social__item">
@@ -161,7 +157,10 @@
           </li>
         </ul>
         <div class="footer__academy-wrap">
-          <a class="footer__academy" href="#">Разработано</a>
+          <a class="footer__academy" href="#">
+            <svg class="footer__academy-logo" width="27" height="34"><use xlink:href="img/sprite.svg#logo-academy"></use></svg>
+            Разработано
+          </a>
         </div>
       </div>
     </footer>

@@ -19,7 +19,7 @@
   box-shadow: 0 2px 0 0 #283645;
 
   @include tablet {
-    height: 75px;
+    height: 78px;
   }
 
   @include desktop {
@@ -40,6 +40,7 @@
 
   @include tablet {
     font-size: 16px;
+    margin-top: 8px;
   }
 
   @include desktop {
@@ -55,6 +56,7 @@
 
   @include tablet {
     font-size: 18px;
+    margin-top: 2px;
   }
 
   @include desktop {
@@ -72,7 +74,7 @@
 
 .table__body td {
   background-color: #ffffff;
-  height: 60px;
+  height: 59px;
   padding-left: 22px;
   font-family: $regular;
   font-size: 14px;

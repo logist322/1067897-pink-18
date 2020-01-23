@@ -40,7 +40,7 @@
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  padding: 19px 20px;
+  padding: 19px 20px 18px;
   word-break: break-all;
 
   @include desktop {
@@ -76,14 +76,10 @@
 }
 
 .main-nav__link--active:hover {
-  @include desktop {
-    color: #ffffff;
-  }
+  color: #ffffff;
 }
 
 .main-nav__link--active:active {
-  @include desktop {
-    color: #ffffff;
-    opacity: 1;
-  }
+  color: #ffffff;
+  opacity: 1;
 }

@@ -2,9 +2,13 @@
   background-color: #1d2631;
   padding: 90px 20px 30px;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-position: left 0 bottom 280px, left 50% bottom 280px;
+  background-position: left 0 bottom 272px, left 50% bottom 272px;
   background-size: 258px auto, 100% auto;
   background-repeat: no-repeat, no-repeat;
+
+  @include retina {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+  }
 
   @include tablet {
     padding: 110px 20px;
@@ -12,6 +16,10 @@
     background-position: left -20px bottom 0, left 50% bottom 0;
     background-size: auto 545px, auto 729px;
     background-repeat: no-repeat, no-repeat;
+
+    @include retina {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   @include desktop {
@@ -20,6 +28,10 @@
     background-position: left 50% bottom 0;
     background-size: auto 100%;
     background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }
 
@@ -36,6 +48,10 @@
     background-position: left 50% bottom 0;
     background-size: auto 100%;
     background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }
 
@@ -43,11 +59,15 @@
   @include desktop {
     width: 940px;
     margin: 0 auto;
-    padding-bottom: 125px;
+    padding-bottom: 120px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: left 20px bottom 0;
+    background-position: left 18px bottom 0;
     background-size: auto 645px;
     background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+    }
   }
 }
 
@@ -100,7 +120,7 @@
   font-family: $bold;
   font-size: 18px;
   color: #ffffff;
-  margin: 340px auto 0;
+  margin: 342px auto 0;
 
   @include tablet {
     margin-top: 30px;
@@ -125,8 +145,7 @@
 
 .greeting__link-list {
   margin: 32px auto 0;
-  max-width: 380px;
-  width: 100%;
+  width: 210px;
 
   @include tablet {
     margin-top: 45px;
@@ -139,7 +158,7 @@
 
 .greeting__subtitle {
   width: 230px;
-  margin: 28px auto 0;
+  margin: 25px auto 0;
   font-family: $light;
   font-size: 14px;
   line-height: 1.71;
