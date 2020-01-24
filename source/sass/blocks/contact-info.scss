@@ -72,6 +72,10 @@
   border-color: #d22856;
 }
 
+.contact-info__input--required {
+  border-color: #d22856;
+}
+
 .contact-info__item--phone::after {
   @include tablet {
     position: absolute;

@@ -145,11 +145,11 @@
 }
 
 .greeting__link-list {
-  margin: 32px auto 0;
-  width: 210px;
+  margin: 35px auto 0;
+  width: 235px;
 
   @include tablet {
-    margin-top: 45px;
+    margin-top: 50px;
   }
 
   @include desktop {
@@ -159,7 +159,7 @@
 
 .greeting__subtitle {
   width: 230px;
-  margin: 25px auto 0;
+  margin: 22px auto 0;
   font-family: $light;
   font-size: 14px;
   line-height: 1.71;
@@ -170,7 +170,7 @@
     width: 295px;
     font-size: 18px;
     line-height: 1.33;
-    margin-top: 40px;
+    margin-top: 35px;
   }
 
   @include desktop {

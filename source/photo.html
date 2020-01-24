@@ -12,7 +12,7 @@
     <script src="js/picturefill.js" async></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header header--opened">
       <div class="header__wrap">
         <div class="header__logo-wrap">
           <a class="header__logo" href="index.html">
@@ -20,9 +20,9 @@
             <svg class="header__logo-svg header__logo-svg--tablet" width="147" height="40"><use xlink:href="img/sprite.svg#logo-header-tablet"></use></svg>
             <svg class="header__logo-svg header__logo-svg--desktop" width="147" height="40"><use xlink:href="img/sprite.svg#logo-header-desktop"></use></svg>
           </a>
-          <button class="header__burger" type="button"></button>
+          <button class="header__burger header__burger--no-js" type="button"></button>
         </div>
-        <nav class="header__main-nav main-nav">
+        <nav class="header__main-nav main-nav main-nav--opened">
           <ul class="main-nav__list list-style-reset">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -43,7 +43,7 @@
 
     <main>
       <section class="intro">
-        <div class="intro__heading-wrap">
+        <div class="intro__heading-wrap intro__heading-wrap--opened">
           <h1 class="intro__heading">Фотографии пользователей</h1>
         </div>
         <div class="intro__subtitle-wrap">
@@ -309,5 +309,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
   </body>
 </html>

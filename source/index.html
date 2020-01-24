@@ -12,7 +12,7 @@
     <script src="js/picturefill.js" async></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header header--opened">
       <div class="header__wrap">
         <div class="header__logo-wrap">
           <a class="header__logo" href="index.html">
@@ -20,9 +20,9 @@
             <svg class="header__logo-svg header__logo-svg--tablet" width="147" height="40"><use xlink:href="img/sprite.svg#logo-header-tablet"></use></svg>
             <svg class="header__logo-svg header__logo-svg--desktop" width="147" height="40"><use xlink:href="img/sprite.svg#logo-header-desktop"></use></svg>
           </a>
-          <button class="header__burger" type="button"></button>
+          <button class="header__burger header__burger--no-js" type="button"></button>
         </div>
-        <nav class="header__main-nav main-nav">
+        <nav class="header__main-nav main-nav main-nav--opened">
           <ul class="main-nav__list list-style-reset">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--active">Главная</a>
@@ -43,7 +43,7 @@
 
     <main>
       <h1 class="visually-hidden">Pink</h1>
-      <section class="greeting">
+      <section class="greeting greeting--opened">
         <div class="greeting__wrap">
           <div class="greeting__container">
             <h2 class="visually-hidden">Ссылки на приложение</h2>
@@ -225,7 +225,7 @@
       </section>
 
       <section class="map">
-        <iframe src="https://yandex.ru/map-widget/v1/-/CGxdJRZ~" frameborder="0" allowfullscreen="true"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CGxdJRZ~" frameborder="0"></iframe>
       </section>
     </main>
 
@@ -256,5 +256,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
   </body>
 </html>

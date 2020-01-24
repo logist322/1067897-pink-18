@@ -70,6 +70,10 @@
 
 .header__logo:active {
   color: #ffffff;
+}
+
+.header__logo-svg:active {
+  color: #ffffff;
   opacity: 0.3;
 }
 
@@ -138,4 +142,8 @@
 .header__burger--opened:active {
   opacity: 0.3;
   background-image: url("../img/icon-menu-cross-pink.svg");
+}
+
+.header__burger--no-js {
+  display: none;
 }

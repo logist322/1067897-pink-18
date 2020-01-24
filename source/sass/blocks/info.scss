@@ -12,7 +12,6 @@
 
   @include desktop {
     width: 880px;
-    justify-content: center;
   }
 }
 
@@ -51,6 +50,11 @@
   @include tablet {
     margin-right: auto;
     margin-left: auto;
+  }
+
+  @include desktop {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 

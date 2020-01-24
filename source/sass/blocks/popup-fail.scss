@@ -5,7 +5,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 320px;
-  display: none; ////////Пока нет js
+  display: block;
   flex-direction: column;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 
@@ -18,6 +18,10 @@
     width: 780px;
     border-radius: 5px;
   }
+}
+
+.popup-fail--closed {
+  display: none;
 }
 
 .popup-fail__text-wrap {
@@ -74,6 +78,7 @@
 }
 
 .popup-fail__button {
+  cursor: pointer;
   margin: 0 auto;
   box-sizing: border-box;
   width: 280px;
