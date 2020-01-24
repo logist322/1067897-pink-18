@@ -10,14 +10,25 @@
   height: 56px;
 }
 
-.apple a {
+.links__item--apple a {
   background: url("../img/logo-apple.svg") 50% 50% no-repeat;
+  background-size: contain;
 }
 
-.android a {
-  background: url("../img/logo-android.svg") 50% 50% no-repeat;
+.links__item--android a {
+  background: url("../img/logo-android.svg") 50% 90% no-repeat;
+  background-size: 45px 45px;
+
+  @include tablet {
+    background-size: 50px 50px;
+  }
+
+  @include desktop {
+    background-size: 45px 45px;
+  }
 }
 
-.windows a {
-  background: url("../img/logo-microsoft.svg") 50% 50% no-repeat;
+.links__item--windows a {
+  background: url("../img/logo-microsoft.svg") 100% 100% no-repeat;
+  background-size: 45px 45px;
 }

@@ -13,13 +13,14 @@
 }
 
 .table__head th {
+  position: relative;
   background-color: #283645;
   height: 96px;
   width: 276px;
   box-shadow: 0 2px 0 0 #283645;
 
   @include tablet {
-    height: 75px;
+    height: 78px;
   }
 
   @include desktop {
@@ -28,8 +29,60 @@
 }
 
 .table__head-cell-wrap {
+  position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.table__head-cell--hit::before {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  content: "";
+  width: 74px;
+  height: 74px;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  z-index: 100;
+
+  @include tablet {
+    top: 0;
+    left: 0;
+    width: 61px;
+    height: 61px;
+    background-image: url("../img/bg-hit-tablet.svg");
+  }
+
+  @include desktop {
+    width: 74px;
+    height: 73px;
+    background-image: url("../img/bg-hit.svg");
+  }
+}
+
+.table__head-cell--hit::after {
+  position: absolute;
+  top: 16px;
+  left: 9px;
+  content: "Хит";
+  font-family: $regular;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #ffffff;
+  transform: rotate(-45deg);
+  z-index: 101;
+
+  @include tablet {
+    top: 12px;
+    left: 7px;
+  }
+
+  @include desktop {
+    top: 18px;
+    left: 12px;
+  }
 }
 
 .table__head-name {
@@ -40,6 +93,7 @@
 
   @include tablet {
     font-size: 16px;
+    margin-top: 8px;
   }
 
   @include desktop {
@@ -55,6 +109,7 @@
 
   @include tablet {
     font-size: 18px;
+    margin-top: 2px;
   }
 
   @include desktop {
@@ -72,7 +127,7 @@
 
 .table__body td {
   background-color: #ffffff;
-  height: 60px;
+  height: 59px;
   padding-left: 22px;
   font-family: $regular;
   font-size: 14px;

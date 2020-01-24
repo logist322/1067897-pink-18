@@ -41,11 +41,36 @@
 
 .footer__logo-wrap {
   width: 147px;
+  color: #283645;
 }
 
-.footer img {
+.footer__logo-wrap:hover {
+  color: #d22856;
+}
+
+.footer__logo-wrap:active {
+  color: #283645;
+}
+
+.footer__logo-svg:active {
+  color: #283645;
+  opacity: 0.3;
+}
+
+.footer__logo-svg--mobile {
   display: block;
-  width: 100%;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.footer__logo-svg--desktop {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
 }
 
 .footer__social-links {
@@ -67,15 +92,12 @@
 }
 
 .footer__academy {
+  position: relative;
   margin-top: 37px;
   display: flex;
   align-items: center;
   padding-right: 42px;
   height: 34px;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-position: right 0 top 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
   font-family: $regular;
   font-size: 14px;
   color: #283645;
@@ -87,4 +109,20 @@
   @include desktop {
     font-size: 18px;
   }
+}
+
+.footer__academy-logo {
+  color: #d22856;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.footer__academy:hover > .footer__academy-logo {
+  color: #283645;
+}
+
+.footer__academy:active > .footer__academy-logo {
+  color: #283645;
+  opacity: 0.3;
 }

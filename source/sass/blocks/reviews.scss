@@ -1,13 +1,13 @@
 .reviews {
-  padding: 45px 20px 55px;
+  padding: 45px 20px;
   background-color: #ffffff;
 
   @include tablet {
-    padding-top: 30px;
+    padding: 30px 20px 22px;
   }
 
   @include desktop {
-    padding: 185px 0 35px;
+    padding: 185px 0 37px;
   }
 }
 
@@ -28,5 +28,58 @@
       background: url("../img/icon-quotes.svg") 50% 50% no-repeat;
       background-size: contain;
     }
+  }
+}
+
+.reviews__button {
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 22px;
+  height: 40px;
+  opacity: 0.3;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.reviews__button:hover {
+  opacity: 0.6;
+}
+
+.reviews__button:active {
+  opacity: 0.1;
+}
+
+.reviews__button--left {
+  left: 0;
+  background-image: url("../img/icon-review-arrow-left.svg");
+}
+
+.reviews__button--right {
+  right: 0;
+  background-image: url("../img/icon-review-arrow-right.svg");
+}
+
+.reviews__dots {
+  width: 62px;
+  margin: 35px auto 0;
+  color: #ffffff;
+
+  @include tablet {
+    margin-top: 40px;
+  }
+
+  @include desktop {
+    display: none;
   }
 }

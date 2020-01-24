@@ -86,6 +86,12 @@
   }
 }
 
+.tools__item--bucket:hover button {
+  @media (max-width: 659px) {
+    background-image: url("../img/icon-editor-fill-grey-hover.svg");
+  }
+}
+
 .tools__item--contrast button {
   background-image: url("../img/icon-editor-contrast-grey.svg");
   background-size: 32px;
@@ -97,6 +103,12 @@
 
   @include desktop {
     background-size: 32px;
+  }
+}
+
+.tools__item--contrast:hover button {
+  @media (max-width: 659px) {
+    background-image: url("../img/icon-editor-contrast-grey-hover.svg");
   }
 }
 

@@ -19,8 +19,58 @@
 
 .achievements__item {
   @include desktop {
-    width: 32%;
     margin-top: 40px;
+  }
+}
+
+.achievements__item:nth-child(3n-2) {
+  @include desktop {
+    width: 315px;
+  }
+}
+
+.achievements__item:nth-child(3n-1) {
+  @include desktop {
+    width: 295px;
+  }
+}
+
+.achievements__item:nth-child(3n) {
+  @include desktop {
+    flex-grow: 1;
+  }
+}
+
+
+.achievements__item--chuck {
+  order: 1;
+
+  @include desktop {
+    order: 0;
+  }
+}
+
+.achievements__item--souvenir {
+  order: 2;
+
+  @include desktop {
+    order: 0;
+  }
+}
+
+.achievements__item--tower {
+  order: 3;
+
+  @include desktop {
+    order: 0;
+  }
+}
+
+.achievements__item--hotel {
+  order: 4;
+
+  @include desktop {
+    order: 0;
   }
 }
 

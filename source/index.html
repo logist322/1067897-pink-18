@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff" crossorigin="anonymous">
     <script>
       // Picture element HTML5 shiv
       document.createElement( "picture" );
@@ -12,19 +18,17 @@
     <script src="js/picturefill.js" async></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header header--opened">
       <div class="header__wrap">
         <div class="header__logo-wrap">
           <a class="header__logo" href="index.html">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img src="img/logo-pink-white-mobile.svg" alt="Логотип">
-            </picture>
+            <svg class="header__logo-svg header__logo-svg--mobile" width="75" height="22"><use xlink:href="img/sprite.svg#logo-header-mobile"></use></svg>
+            <svg class="header__logo-svg header__logo-svg--tablet" width="147" height="40"><use xlink:href="img/sprite.svg#logo-header-tablet"></use></svg>
+            <svg class="header__logo-svg header__logo-svg--desktop" width="147" height="40"><use xlink:href="img/sprite.svg#logo-header-desktop"></use></svg>
           </a>
-          <button class="header__burger" type="button"></button>
+          <button class="header__burger header__burger--no-js" type="button"></button>
         </div>
-        <nav class="header__main-nav main-nav">
+        <nav class="header__main-nav main-nav main-nav--opened">
           <ul class="main-nav__list list-style-reset">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--active">Главная</a>
@@ -36,7 +40,7 @@
               <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">HTML Academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -45,27 +49,27 @@
 
     <main>
       <h1 class="visually-hidden">Pink</h1>
-      <section class="greeting">
+      <section class="greeting greeting--opened">
         <div class="greeting__wrap">
           <div class="greeting__container">
             <h2 class="visually-hidden">Ссылки на приложение</h2>
             <div class="greeting__slogan-wrap">
               <p class="greeting__slogan">Взгляните на жизнь иначе!</p>
             </div>
-            <a class="greeting__download" href="#">Скачать приложение</a>
+            <a class="greeting__download" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
             <ul class="greeting__link-list links list-style-reset">
-              <li class="links__item apple">
-                <a href="#">
+              <li class="links__item links__item--apple">
+                <a href="https://www.apple.com/ru/ios/app-store/">
                   <span class="visually-hidden">Apple</span>
                 </a>
               </li>
-              <li class="links__item android">
-                <a href="#">
+              <li class="links__item  links__item--android">
+                <a href="https://play.google.com/store">
                   <span class="visually-hidden">Android</span>
                 </a>
               </li>
-              <li class="links__item windows">
-                <a href="#">
+              <li class="links__item  links__item--windows">
+                <a href="https://www.microsoft.com/ru-ru/store/b/home">
                   <span class="visually-hidden">Windows</span>
                 </a>
               </li>
@@ -110,6 +114,8 @@
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__container">
+          <button class="reviews__button reviews__button--left"><span class="visually-hidden">Назад</span></button>
+          <button class="reviews__button reviews__button--right"><span class="visually-hidden">Назад</span></button>
           <ul class="reviews__slider slider list-style-reset">
             <li class="slider__item">
               <blockquote>
@@ -121,6 +127,14 @@
               </blockquote>
             </li>
           </ul>
+          <div class="reviews__dots dots">
+            <input class="dots__radio visually-hidden" id="first-dot-reviews" name="reviews-slider" type="radio" checked>
+            <label class="dots__label" for="first-dot-reviews"></label>
+            <input class="dots__radio visually-hidden" id="second-dot-reviews" name="reviews-slider" type="radio">
+            <label class="dots__label" for="second-dot-reviews"></label>
+            <input class="dots__radio visually-hidden" id="third-dot-reviews" name="reviews-slider" type="radio">
+            <label class="dots__label" for="third-dot-reviews"></label>
+          </div>
         </div>
       </section>
 
@@ -136,7 +150,7 @@
                   <span class="table__head-price">1,99 USD</span>
                 </div>
               </th>
-              <th>
+              <th class="table__head-cell table__head-cell--hit">
                 <div class="table__head-cell-wrap">
                   <span class="table__head-name">Стандарт</span>
                   <span class="table__head-price">3,99 USD</span>
@@ -185,6 +199,14 @@
               </td>
             </tr>
           </table>
+          <div class="prices__dots dots">
+            <input class="dots__radio visually-hidden" id="first-dot-prices" name="prices-slider" type="radio">
+            <label class="dots__label" for="first-dot-prices"></label>
+            <input class="dots__radio visually-hidden" id="second-dot-prices" name="prices-slider" type="radio" checked>
+            <label class="dots__label" for="second-dot-prices"></label>
+            <input class="dots__radio visually-hidden" id="third-dot-prices" name="prices-slider" type="radio">
+            <label class="dots__label" for="third-dot-prices"></label>
+          </div>
         </div>
       </section>
 
@@ -194,32 +216,30 @@
           <ul class="contacts__list info list-style-reset">
             <li class="info__item">
               <p>Звоните:</p>
-              <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+              <a class="info__link" href="tel:+78125556666">+7 (812) 555-66-66</a class="info__link">
             </li>
             <li class="info__item">
               <p>Пишите:</p>
-              <a class="info__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="info__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
             <li class="info__item">
               <p>Приезжайте в гости:</p>
-              <a href="#">ул. Большая Конюшенная, 19/8</a>
+              <a class="info__link" href="#">ул. Большая Конюшенная, 19/8</a>
             </li>
           </ul>
         </div>
       </section>
 
       <section class="map">
-        <iframe src="https://yandex.ru/map-widget/v1/-/CGxdJRZ~" frameborder="0" allowfullscreen="true"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CGxdJRZ~" frameborder="0"></iframe>
       </section>
     </main>
 
     <footer class="footer footer--main">
       <div class="footer__container">
         <a class="footer__logo-wrap" href="index.html">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип">
-          </picture>
+          <svg class="footer__logo-svg footer__logo-svg--mobile" width="147" height="40"><use xlink:href="img/sprite.svg#logo-footer-mobile"></use></svg>
+          <svg class="footer__logo-svg footer__logo-svg--desktop" width="147" height="40"><use xlink:href="img/sprite.svg#logo-footer-desktop"></use></svg>
         </a>
         <ul class="footer__social-links social list-style-reset">
           <li class="social__item">
@@ -233,11 +253,16 @@
           </li>
         </ul>
         <div class="footer__academy-wrap">
-          <a class="footer__academy" href="#">Разработано</a>
+          <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="footer__academy-logo" width="27" height="34"><use xlink:href="img/sprite.svg#logo-academy"></use></svg>
+            Разработано
+          </a>
         </div>
       </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
   </body>
 </html>

@@ -16,6 +16,11 @@
       width: 268px;
       height: 481px;
       background: url("../img/iphone-screen-3-tablet@1x.png") 50% 50% no-repeat;
+
+      @include retina {
+        background-image: url("../img/iphone-screen-3-tablet@2x.png");
+        background-size: 268px;
+      }
     }
   }
 
@@ -65,18 +70,30 @@
 .advantages__item--grey {
   @include desktop {
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
+
+    @include retina {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+    }
   }
 }
 
 .advantages__item--pink {
   @include desktop {
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
+
+    @include retina {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+    }
   }
 }
 
 .advantages__item--smile {
   @include desktop {
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
+
+    @include retina {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+    }
   }
 }
 
@@ -84,6 +101,7 @@
   font-family: $bold;
   font-size: 18px;
   text-align: center;
+  width: 100%;
 
   @include desktop {
     font-size: 30px;
@@ -98,6 +116,7 @@
   line-height: 1.71;
   text-align: center;
   color: #283645;
+  width: 100%;
 
   @include tablet {
     text-align: left;

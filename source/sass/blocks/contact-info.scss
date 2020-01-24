@@ -24,7 +24,11 @@
 }
 
 .contact-info__item:not(:first-child) {
-  margin-top: 35px;
+  margin-top: 20px;
+
+  @include tablet {
+    margin-top: 35px;
+  }
 
   @include desktop {
     margin-top: 0;
@@ -55,8 +59,8 @@
   border-radius: 1px;
 
   @include tablet {
-    border-right-width: 60px;
     margin-top: 0;
+    padding-left: 18px;
   }
 }
 
@@ -68,6 +72,10 @@
   border-color: #d22856;
 }
 
+.contact-info__input--required {
+  border-color: #d22856;
+}
+
 .contact-info__item--phone::after {
   @include tablet {
     position: absolute;
@@ -75,7 +83,7 @@
     top: 2px;
     right: 2px;
     width: 59px;
-    height: 59px;
+    height: 59.5px;
     background-color: #e5e5e5;
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
@@ -91,7 +99,7 @@
     top: 2px;
     right: 2px;
     width: 59px;
-    height: 59px;
+    height: 59.5px;
     background-color: #e5e5e5;
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;

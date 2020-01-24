@@ -1,24 +1,27 @@
 .prices {
-  padding: 125px 0 100px;
+  padding: 88px 0 50px;
   background-color: #f2f2f2;
   background-image: url("../img/bg-triangle-white.svg");
   background-position: 50% 0;
   background-repeat: no-repeat;
 
   @include tablet {
-    padding: 110px 20px 70px;
+    padding: 84px 20px 70px;
+    background-position: 50% 0;
   }
 
   @include desktop {
-    padding: 157px 20px 70px;
+    padding: 152px 20px 95px;
     background-size: 100%;
+    background-position: 50% 0;
   }
 }
 
 .prices__container {
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   @include tablet {
     margin: 0 auto;
@@ -36,5 +39,15 @@
   @include tablet {
     width: 100%;
     margin: 0 auto;
+  }
+}
+
+.prices__dots {
+  width: 62px;
+  margin: 38px auto 0;
+  color: #f2f2f2;
+
+  @include tablet {
+    display: none;
   }
 }

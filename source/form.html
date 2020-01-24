@@ -12,19 +12,17 @@
     <script src="js/picturefill.js" async></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header header--opened">
       <div class="header__wrap">
         <div class="header__logo-wrap">
           <a class="header__logo" href="index.html">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img src="img/logo-pink-white-mobile.svg" alt="Логотип">
-            </picture>
+            <svg class="header__logo-svg header__logo-svg--mobile" width="75" height="22"><use xlink:href="img/sprite.svg#logo-header-mobile"></use></svg>
+            <svg class="header__logo-svg header__logo-svg--tablet" width="147" height="40"><use xlink:href="img/sprite.svg#logo-header-tablet"></use></svg>
+            <svg class="header__logo-svg header__logo-svg--desktop" width="147" height="40"><use xlink:href="img/sprite.svg#logo-header-desktop"></use></svg>
           </a>
-          <button class="header__burger" type="button"></button>
+          <button class="header__burger header__burger--no-js" type="button"></button>
         </div>
-        <nav class="header__main-nav main-nav">
+        <nav class="header__main-nav main-nav main-nav--opened">
           <ul class="main-nav__list list-style-reset">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -36,7 +34,7 @@
               <a class="main-nav__link main-nav__link--active">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">HTML Academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -45,7 +43,7 @@
 
     <main>
       <section class="competition">
-        <div class="competition__heading-wrap">
+        <div class="competition__heading-wrap competition__heading-wrap--opened">
           <h1 class="competition__heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
         <div class="competition__subtitle-wrap">
@@ -55,15 +53,15 @@
 
       <section class="prize">
         <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
-        <form class="prize__form participant-form" action="https://echo.htmlacademy.ru" method="POST">
+        <form class="prize__form participant-form" action="https://echo.htmlacademy.ru" method="POST" id="anch">
           <ul class="participant-form__name user-name list-style-reset">
-            <li class="user-name__item">
+            <li class="user-name__item" id="anch">
               <label class="user-name__label" for="second-name">Фамилия:</label>
-              <input class="user-name__input" type="text" id="second-name" name="second-name" placeholder="Укажите фамилию *" required>
+              <input class="user-name__input user-name__input--second-name" type="text" id="second-name" name="second-name" placeholder="Укажите фамилию *">
             </li>
             <li class="user-name__item">
               <label class="user-name__label" for="first-name">Имя:</label>
-              <input class="user-name__input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *" required>
+              <input class="user-name__input user-name__input--first-name" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя *">
             </li>
             <li class="user-name__item">
               <label class="user-name__label" for="patronymic">Отчество:</label>
@@ -92,11 +90,11 @@
             <ul class="participant-form__contact-info-list contact-info list-style-reset">
               <li class="contact-info__item contact-info__item--phone">
                 <label class="contact-info__label" for="phone">Номер телефона</label>
-                <input class="contact-info__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+                <input class="contact-info__input contact-info__input--phone" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
               </li>
               <li class="contact-info__item contact-info__item--email">
                 <label class="contact-info__label" for="email">Адрес почты</label>
-                <input class="contact-info__input" type="email" id="email" name="email" placeholder="Введите почту *" required>
+                <input class="contact-info__input contact-info__input--email" type="email" id="email" name="email" placeholder="Введите почту *">
               </li>
             </ul>
           </fieldset>
@@ -107,23 +105,23 @@
                 <input class="achievements__checkbox visually-hidden" type="checkbox" id="shark" name="achievements" value="shark" checked>
                 <label class="achievements__label" for="shark">Сделал селфи с акулой</label>
               </li>
-              <li class="achievements__item">
-                <input class="achievements__checkbox visually-hidden" type="checkbox" id="beach" name="achievements" value="beach" checked>
-                <label class="achievements__label" for="beach">Обгорел на пляже</label>
-              </li>
-              <li class="achievements__item">
+              <li class="achievements__item achievements__item--chuck">
                 <input class="achievements__checkbox visually-hidden" type="checkbox" id="chuck" name="achievements" value="chuck">
                 <label class="achievements__label" for="chuck">Видел Чака Норриса</label>
               </li>
-              <li class="achievements__item">
-                <input class="achievements__checkbox visually-hidden" type="checkbox" id="souvenir" name="achievements" value="souvenir">
-                <label class="achievements__label" for="souvenir">Накупил сувениров</label>
-              </li>
-              <li class="achievements__item">
+              <li class="achievements__item achievements__item--tower">
                 <input class="achievements__checkbox visually-hidden" type="checkbox" id="tower" name="achievements" value="tower" checked>
                 <label class="achievements__label" for="tower">Удержал башню</label>
               </li>
               <li class="achievements__item">
+                <input class="achievements__checkbox visually-hidden" type="checkbox" id="beach" name="achievements" value="beach" checked>
+                <label class="achievements__label" for="beach">Обгорел на пляже</label>
+              </li>
+              <li class="achievements__item achievements__item--souvenir">
+                <input class="achievements__checkbox visually-hidden" type="checkbox" id="souvenir" name="achievements" value="souvenir">
+                <label class="achievements__label" for="souvenir">Накупил сувениров</label>
+              </li>
+              <li class="achievements__item achievements__item--hotel">
                 <input class="achievements__checkbox visually-hidden" type="checkbox" id="hotel" name="achievements" value="hotel">
                 <label class="achievements__label" for="hotel">Разгромил отель</label>
               </li>
@@ -144,10 +142,8 @@
     <footer class="footer">
       <div class="footer__container">
         <a class="footer__logo-wrap" href="index.html">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип">
-          </picture>
+          <svg class="footer__logo-svg footer__logo-svg--mobile" width="147" height="40"><use xlink:href="img/sprite.svg#logo-footer-mobile"></use></svg>
+          <svg class="footer__logo-svg footer__logo-svg--desktop" width="147" height="40"><use xlink:href="img/sprite.svg#logo-footer-desktop"></use></svg>
         </a>
         <ul class="footer__social-links social list-style-reset">
           <li class="social__item">
@@ -161,12 +157,15 @@
           </li>
         </ul>
         <div class="footer__academy-wrap">
-          <a class="footer__academy" href="#">Разработано</a>
+          <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="footer__academy-logo" width="27" height="34"><use xlink:href="img/sprite.svg#logo-academy"></use></svg>
+            Разработано
+          </a>
         </div>
       </div>
     </footer>
 
-    <div class="popup-success">
+    <div class="popup-success popup-success--closed">
       <div class="popup-success__text-wrap">
         <b class="popup-success__title">Ваша заявка отправлена</b>
         <p class="popup-success__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.</p>
@@ -176,7 +175,7 @@
       </div>
     </div>
 
-    <div class="popup-fail">
+    <div class="popup-fail popup-fail--closed">
       <div class="popup-fail__text-wrap">
         <b class="popup-fail__title">Что-то пошло не так!</b>
         <p class="popup-fail__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -187,5 +186,7 @@
     </div>
 
     <script src="js/script.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
   </body>
 </html>

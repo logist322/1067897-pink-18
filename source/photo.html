@@ -12,19 +12,17 @@
     <script src="js/picturefill.js" async></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header header--opened">
       <div class="header__wrap">
         <div class="header__logo-wrap">
           <a class="header__logo" href="index.html">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img src="img/logo-pink-white-mobile.svg" alt="Логотип">
-            </picture>
+            <svg class="header__logo-svg header__logo-svg--mobile" width="75" height="22"><use xlink:href="img/sprite.svg#logo-header-mobile"></use></svg>
+            <svg class="header__logo-svg header__logo-svg--tablet" width="147" height="40"><use xlink:href="img/sprite.svg#logo-header-tablet"></use></svg>
+            <svg class="header__logo-svg header__logo-svg--desktop" width="147" height="40"><use xlink:href="img/sprite.svg#logo-header-desktop"></use></svg>
           </a>
-          <button class="header__burger" type="button"></button>
+          <button class="header__burger header__burger--no-js" type="button"></button>
         </div>
-        <nav class="header__main-nav main-nav">
+        <nav class="header__main-nav main-nav main-nav--opened">
           <ul class="main-nav__list list-style-reset">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -36,7 +34,7 @@
               <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">HTML Academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -45,7 +43,7 @@
 
     <main>
       <section class="intro">
-        <div class="intro__heading-wrap">
+        <div class="intro__heading-wrap intro__heading-wrap--opened">
           <h1 class="intro__heading">Фотографии пользователей</h1>
         </div>
         <div class="intro__subtitle-wrap">
@@ -57,9 +55,13 @@
         <h2 class="visually-hidden">Панорама</h2>
         <a href="#">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
-            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
-            <img src="img/panorama-mobile@1x.jpg" alt="Панорама">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
+
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама">
           </picture>
         </a>
         <div class="panorama__description description">
@@ -81,9 +83,13 @@
           <li class="gallery__item card">
             <a class="card__img-wrap" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
-                <img src="img/photo-car-mobile@1x.jpg" alt="Автомобиль">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Автомобиль">
               </picture>
             </a>
             <div class="card__description">
@@ -101,9 +107,13 @@
           <li class="gallery__item card">
             <a class="card__img-wrap" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
-                <img src="img/photo-drumset-mobile@1x.jpg" alt="Барабаны">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабаны">
               </picture>
             </a>
             <div class="card__description">
@@ -121,9 +131,13 @@
           <li class="gallery__item card">
             <a class="card__img-wrap" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
-                <img src="img/photo-window-mobile@1x.jpg" alt="Окна">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Окна">
               </picture>
             </a>
             <div class="card__description">
@@ -141,9 +155,13 @@
           <li class="gallery__item card">
             <a class="card__img-wrap" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
-                <img src="img/photo-fair-mobile@1x.jpg" alt="Ярмарка">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Ярмарка">
               </picture>
             </a>
             <div class="card__description">
@@ -161,9 +179,13 @@
           <li class="gallery__item card">
             <a class="card__img-wrap" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
-                <img src="img/photo-pov-mobile@1x.jpg" alt="Горы">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Горы">
               </picture>
             </a>
             <div class="card__description">
@@ -181,9 +203,13 @@
           <li class="gallery__item card">
             <a class="card__img-wrap" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
-                <img src="img/photo-wing-mobile@1x.jpg" alt="Крыло самолета">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Крыло самолета">
               </picture>
             </a>
             <div class="card__description">
@@ -210,8 +236,13 @@
         <div class="editor__container">
           <div class="editor__image-wrap">
             <picture>
-              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
-              <img src="img/photo-road-mobile@1x.jpg" alt="Дорога">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Дорога">
             </picture>
           </div>
           <form class="editor__controls controls" action="https://echo.htmlacademy.ru" method="POST">
@@ -254,10 +285,8 @@
     <footer class="footer">
       <div class="footer__container">
         <a class="footer__logo-wrap" href="index.html">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-            <img src="img/logo-pink-blue-mobile.svg" alt="Логотип">
-          </picture>
+          <svg class="footer__logo-svg footer__logo-svg--mobile" width="147" height="40"><use xlink:href="img/sprite.svg#logo-footer-mobile"></use></svg>
+          <svg class="footer__logo-svg footer__logo-svg--desktop" width="147" height="40"><use xlink:href="img/sprite.svg#logo-footer-desktop"></use></svg>
         </a>
         <ul class="footer__social-links social list-style-reset">
           <li class="social__item">
@@ -271,11 +300,16 @@
           </li>
         </ul>
         <div class="footer__academy-wrap">
-          <a class="footer__academy" href="#">Разработано</a>
+          <a class="footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="footer__academy-logo" width="27" height="34"><use xlink:href="img/sprite.svg#logo-academy"></use></svg>
+            Разработано
+          </a>
         </div>
       </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
   </body>
 </html>

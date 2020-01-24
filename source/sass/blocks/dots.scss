@@ -1,0 +1,32 @@
+.dots {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dots__label {
+  cursor: pointer;
+  display: block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border: 3px solid currentColor;
+  border-radius: 50%;
+  background-color: rgba(40, 54, 69, 0.3);
+}
+
+.dots__label:hover {
+  background-color: rgba(40, 54, 69, 0.6);
+}
+
+.dots__label:active {
+  background-color: rgba(40, 54, 69, 0.1);
+}
+
+.dots__radio:checked + .dots__label {
+  border: 3px solid #283645;
+  background-color: #ffffff;
+}
+
+.dots__radio:focus + .dots__label {
+  outline: 2px solid skyblue;
+}
