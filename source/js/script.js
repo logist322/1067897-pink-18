@@ -69,7 +69,7 @@ buttonOk.addEventListener('click', function(evt) {
 buttonError.addEventListener('click', function(evt) {
   evt.preventDefault();
   popupError.classList.add('popup-fail--closed');
-  location.href = '#anch';
+  location.href = 'form.html#anch';
 })
 
 firstName.addEventListener('click', function(evt) {
