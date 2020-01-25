@@ -11,12 +11,12 @@
 }
 
 .links__item--apple a {
-  background: url("../img/logo-apple.svg") 50% 50% no-repeat;
+  background: url("../img/icon-apple.svg") 50% 50% no-repeat;
   background-size: contain;
 }
 
 .links__item--android a {
-  background: url("../img/logo-android.svg") 50% 90% no-repeat;
+  background: url("../img/icon-android.svg") 50% 90% no-repeat;
   background-size: 45px 45px;
 
   @include tablet {
@@ -29,6 +29,6 @@
 }
 
 .links__item--windows a {
-  background: url("../img/logo-microsoft.svg") 100% 100% no-repeat;
+  background: url("../img/icon-microsoft.svg") 100% 100% no-repeat;
   background-size: 45px 45px;
 }

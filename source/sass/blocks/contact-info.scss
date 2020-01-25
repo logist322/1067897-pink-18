@@ -35,6 +35,12 @@
   }
 }
 
+.contact-info__item:nth-child(n+3) {
+  @include desktop {
+    margin-top: 35px;
+  }
+}
+
 .contact-info__label {
   margin-left: 23px;
   font-family: $regular;

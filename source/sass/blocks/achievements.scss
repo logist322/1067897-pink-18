@@ -37,7 +37,7 @@
 
 .achievements__item:nth-child(3n) {
   @include desktop {
-    flex-grow: 1;
+    width: 210px;
   }
 }
 

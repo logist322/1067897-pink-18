@@ -14,13 +14,13 @@
     margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-end;
   }
 }
 
 .participant-form__name {
   @include desktop {
     width: 435px;
+    margin-top: 15px;
     margin-right: auto;
   }
 }
